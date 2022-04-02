@@ -8,7 +8,21 @@ namespace Building
     {
         SmallHouse,
         TallHouse,
-        LargeHouse
+        LargeHouse,
+        Mansion,
+        Apartment,
+        Greenhouse,
+        Farm,
+        Park,
+        Marker,
+        Brewery,
+        Mill,
+        Cathedral,
+        Temple,
+        Shrine,
+        Keep,
+        Lighthouse,
+        Wall
     }
 
     [System.Serializable]
