@@ -76,7 +76,8 @@ public class Player : MonoBehaviour
             cursor.position = cursorPos;
             if (Input.GetMouseButtonDown(0))
             {
-                Instantiate(objects[Random.Range(0, objects.Count)], cursorPos, Quaternion.identity);
+                int random = Random.Range(0, objects.Count);
+                Instantiate(objects[random], cursorPos, objects[random].transform.rotation);
             }
         }
     }

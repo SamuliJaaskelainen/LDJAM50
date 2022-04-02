@@ -14,7 +14,7 @@ namespace Building
         Greenhouse,
         Farm,
         Park,
-        Marker,
+        Market,
         Brewery,
         Mill,
         Cathedral,
