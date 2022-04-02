@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    [SerializeField] Transform cam;
+    [SerializeField] GameObject smallHouse;
+    [SerializeField] Camera cam;
     [SerializeField] Transform camParent;
     [SerializeField] float zoomSpeed = 1.0f;
     [SerializeField] float zoomMovementMultiplier = 1.0f;
@@ -44,7 +45,7 @@ public class Player : MonoBehaviour
         {
             Debug.DrawRay(skyVector, Vector3.down, Color.red);
         }
-        cam.localEulerAngles = new Vector3(Mathf.Lerp(minX, maxX, zoomLevel), 0.0f, 0.0f);
+        cam.transform.localEulerAngles = new Vector3(Mathf.Lerp(minX, maxX, zoomLevel), 0.0f, 0.0f);
 
         movement += new Vector3(Input.GetKey(KeyCode.D) ? 1.0f : Input.GetKey(KeyCode.A) ? -1.0f : 0.0f, 0.0f, Input.GetKey(KeyCode.W) ? 1.0f : Input.GetKey(KeyCode.S) ? -1.0f : 0.0f) * movementSpeedKeys;
         if (Input.GetMouseButton(1))
@@ -59,10 +60,20 @@ public class Player : MonoBehaviour
             orbit += orbitSpeedMouse * mouseDelta.x;
         }
         Vector3 orbitPoint = Vector3.zero;
-        if (Physics.Raycast(cam.position, cam.forward, out hit))
+        if (Physics.Raycast(cam.transform.position, cam.transform.forward, out hit))
         {
             orbitPoint = hit.point;
         }
         transform.RotateAround(orbitPoint, Vector3.up, orbit * Time.deltaTime);
+
+        if (Input.GetMouseButtonDown(0))
+        {
+            Ray ray = cam.ScreenPointToRay(Input.mousePosition);
+
+            if (Physics.Raycast(ray, out hit))
+            {
+                Instantiate(smallHouse, hit.point + Vector3.up * 1.0f, Quaternion.identity);
+            }
+        }
     }
 }
