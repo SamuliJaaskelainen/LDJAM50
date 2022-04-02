@@ -90,10 +90,12 @@ Material:
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
     - _EnvironmentReflections: 1
-    - _FoamAmount: 0.42
+    - _FoamAmount: 2
     - _FoamCutoff: 2
     - _FoamFluxSpeed: 67
-    - _FoamScale: 9999
+    - _FoamMax: 3
+    - _FoamMin: 1
+    - _FoamScale: 50000
     - _FoamSpeed: -1
     - _GlossMapScale: 0
     - _Glossiness: 0

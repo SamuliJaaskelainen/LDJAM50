@@ -416,6 +416,11 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+    - target: {fileID: 5703788112207801484, guid: 4071ef102243aaf4b862d99382b5f3d9,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5703788112207801485, guid: 4071ef102243aaf4b862d99382b5f3d9,
         type: 3}
       propertyPath: m_RenderingLayerMask
@@ -439,7 +444,7 @@ PrefabInstance:
     - target: {fileID: 5703788112207801487, guid: 4071ef102243aaf4b862d99382b5f3d9,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 500
+      value: 2000
       objectReference: {fileID: 0}
     - target: {fileID: 5703788112207801487, guid: 4071ef102243aaf4b862d99382b5f3d9,
         type: 3}
@@ -449,7 +454,7 @@ PrefabInstance:
     - target: {fileID: 5703788112207801487, guid: 4071ef102243aaf4b862d99382b5f3d9,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 500
+      value: 2000
       objectReference: {fileID: 0}
     - target: {fileID: 5703788112207801487, guid: 4071ef102243aaf4b862d99382b5f3d9,
         type: 3}
