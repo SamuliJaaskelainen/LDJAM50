@@ -248,8 +248,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 549a93506abf9164f9dbb66e5f2f6a61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  smallHouse: {fileID: 7322123193864878799, guid: 4fee15fb1afa09f4c89e631468911357,
-    type: 3}
+  objects:
+  - {fileID: 4978016310013176813, guid: afaba2d55e2052c4aae1edd07abbe5d1, type: 3}
+  - {fileID: 5020840687663118144, guid: 657d13df32bf53f49a7917e866622fe1, type: 3}
+  - {fileID: 313339576241506123, guid: 7651148fd7fe6af4586b04a4543c6fa9, type: 3}
+  - {fileID: 7322123193864878799, guid: 4fee15fb1afa09f4c89e631468911357, type: 3}
+  - {fileID: 8781552269768396170, guid: d4923376d2e2dfb4a9c1fc297e3fa8ac, type: 3}
   cursor: {fileID: 278631370}
   cam: {fileID: 4703479352374060948}
   camParent: {fileID: 4703479353410247076}

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    [SerializeField] GameObject smallHouse;
+    [SerializeField] List<GameObject> objects;
 
     [SerializeField] Transform cursor;
     [SerializeField] Camera cam;
@@ -76,7 +76,7 @@ public class Player : MonoBehaviour
             cursor.position = cursorPos;
             if (Input.GetMouseButtonDown(0))
             {
-                Instantiate(smallHouse, cursorPos, Quaternion.identity);
+                Instantiate(objects[Random.Range(0, objects.Count)], cursorPos, Quaternion.identity);
             }
         }
     }
