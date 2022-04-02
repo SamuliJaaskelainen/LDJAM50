@@ -19,6 +19,7 @@ public class Player : MonoBehaviour
     [SerializeField] float movementSpeedKeys = 1.0f;
     [SerializeField] float orbitSpeedMouse = 10.0f;
     [SerializeField] float orbitSpeedKeys = 10.0f;
+    [SerializeField] float rotateCursorMultiplier = 10.0f;
     float zoomLevel = 0.0f;
     RaycastHit hit;
     Vector3 lastMousePos;
@@ -30,12 +31,19 @@ public class Player : MonoBehaviour
         float orbit = 0.0f;
         Vector3 mouseDelta = lastMousePos - Input.mousePosition;
         lastMousePos = Input.mousePosition;
-        zoomLevel += Input.mouseScrollDelta.y * zoomSpeed * Time.deltaTime;
 
-        zoomLevel = Mathf.Clamp01(zoomLevel);
-        if (!Mathf.Approximately(zoomLevel, 0.0f) && !Mathf.Approximately(zoomLevel, 1.0f))
+        if (Hand.Instance.IsCardSelected())
         {
-            movement += Vector3.forward * Input.mouseScrollDelta.y * zoomMovementMultiplier * Time.deltaTime;
+            cursor.Rotate(Input.mouseScrollDelta.y * rotateCursorMultiplier * Vector3.up, Space.World);
+        }
+        else
+        {
+            zoomLevel += Input.mouseScrollDelta.y * zoomSpeed * Time.deltaTime;
+            zoomLevel = Mathf.Clamp01(zoomLevel);
+            if (!Mathf.Approximately(zoomLevel, 0.0f) && !Mathf.Approximately(zoomLevel, 1.0f))
+            {
+                movement += Vector3.forward * Input.mouseScrollDelta.y * zoomMovementMultiplier * Time.deltaTime;
+            }
         }
 
         Vector3 skyVector = camParent.position + Vector3.up * GlobalData.seaLevel + Vector3.up * 100.0f;
@@ -75,9 +83,9 @@ public class Player : MonoBehaviour
             Debug.DrawLine(cam.transform.position, hit.point, Color.green);
             Vector3 cursorPos = hit.point + Vector3.up * 1.0f;
             cursor.position = cursorPos;
-            if (Input.GetMouseButtonDown(0) && wasCardSelected)
+            if (Input.GetMouseButtonDown(0) && wasCardSelected && Hand.Instance.IsCardSelected())
             {
-                Hand.Instance.UseSelectedCard(cursorPos);
+                Hand.Instance.UseSelectedCard(cursorPos, cursor.eulerAngles.y);
                 //int random = Random.Range(0, objects.Count);
                 //Instantiate(objects[random], cursorPos, objects[random].transform.rotation);
             }

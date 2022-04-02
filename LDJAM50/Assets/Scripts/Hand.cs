@@ -67,19 +67,20 @@ public class Hand : MonoBehaviour
         }
     }
 
-    public void UseSelectedCard(Vector3 pos)
+    public void UseSelectedCard(Vector3 pos, float yRot)
     {
         if (cards.Count > selectedCard)
         {
-            Instantiate(cards[selectedCard].card.prefabToSpawn, pos, cards[selectedCard].card.prefabToSpawn.transform.rotation);
+            GameObject newObject = Instantiate(cards[selectedCard].card.prefabToSpawn, pos, cards[selectedCard].card.prefabToSpawn.transform.rotation) as GameObject;
+            newObject.transform.eulerAngles += new Vector3(0.0f, yRot, 0.0f);
             Destroy(cards[selectedCard].gameObject);
             cards.RemoveAt(selectedCard);
             if (cards.Count <= 0)
             {
                 GlobalData.rounds++;
                 SetCards(debugCards);
-                // TODO: Show buy hand menu
                 // TODO: Increase sea level
+                UiController.Instance.ShowShopUI();
             }
             else
             {
