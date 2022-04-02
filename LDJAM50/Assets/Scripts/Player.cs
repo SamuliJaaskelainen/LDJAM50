@@ -22,6 +22,7 @@ public class Player : MonoBehaviour
     float zoomLevel = 0.0f;
     RaycastHit hit;
     Vector3 lastMousePos;
+    bool wasCardSelected;
 
     void Update()
     {
@@ -74,11 +75,14 @@ public class Player : MonoBehaviour
             Debug.DrawLine(cam.transform.position, hit.point, Color.green);
             Vector3 cursorPos = hit.point + Vector3.up * 1.0f;
             cursor.position = cursorPos;
-            if (Input.GetMouseButtonDown(0))
+            if (Input.GetMouseButtonDown(0) && wasCardSelected)
             {
-                int random = Random.Range(0, objects.Count);
-                Instantiate(objects[random], cursorPos, objects[random].transform.rotation);
+                Hand.Instance.UseSelectedCard(cursorPos);
+                //int random = Random.Range(0, objects.Count);
+                //Instantiate(objects[random], cursorPos, objects[random].transform.rotation);
             }
         }
+        cursor.gameObject.SetActive(Hand.Instance.IsCardSelected());
+        wasCardSelected = Hand.Instance.IsCardSelected();
     }
 }

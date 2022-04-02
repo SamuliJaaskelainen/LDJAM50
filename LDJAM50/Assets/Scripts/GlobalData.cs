@@ -8,6 +8,7 @@ public class GlobalData : MonoBehaviour
     public static int population = 0;
     public static int money = 0;
     public static int faith = 0;
+    public static int rounds = 0;
 
     void Awake()
     {
