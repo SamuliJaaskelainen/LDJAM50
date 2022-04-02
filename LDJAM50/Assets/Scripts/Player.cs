@@ -5,6 +5,8 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     [SerializeField] GameObject smallHouse;
+
+    [SerializeField] Transform cursor;
     [SerializeField] Camera cam;
     [SerializeField] Transform camParent;
     [SerializeField] float zoomSpeed = 1.0f;
@@ -66,13 +68,15 @@ public class Player : MonoBehaviour
         }
         transform.RotateAround(orbitPoint, Vector3.up, orbit * Time.deltaTime);
 
-        if (Input.GetMouseButtonDown(0))
+        Ray ray = cam.ScreenPointToRay(Input.mousePosition);
+        if (Physics.Raycast(ray, out hit, 99999.0f))
         {
-            Ray ray = cam.ScreenPointToRay(Input.mousePosition);
-
-            if (Physics.Raycast(ray, out hit))
+            Debug.DrawLine(cam.transform.position, hit.point, Color.green);
+            Vector3 cursorPos = hit.point + Vector3.up * 1.0f;
+            cursor.position = cursorPos;
+            if (Input.GetMouseButtonDown(0))
             {
-                Instantiate(smallHouse, hit.point + Vector3.up * 1.0f, Quaternion.identity);
+                Instantiate(smallHouse, cursorPos, Quaternion.identity);
             }
         }
     }
