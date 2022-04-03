@@ -337,6 +337,18 @@ public class Hand : MonoBehaviour
         if (GlobalData.money >= generatedHandSets[hand].price)
         {
             GlobalData.money -= generatedHandSets[hand].price;
+            switch (Random.Range(0, 3))
+				{
+					case 0:
+						AudioManager.Instance.PlaySound("HandPurchase01");
+						break;
+ 	           		case 1:
+ 	               		AudioManager.Instance.PlaySound("HandPurchase02");
+ 	               		break;
+ 	           		case 2:
+ 	               		AudioManager.Instance.PlaySound("HandPurchase03");
+ 	               		break;
+	        	}
             SetCards(generatedHandSets[hand].cards);
             UiController.Instance.ShowGamePlayUI();
             ShowHand();
