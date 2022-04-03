@@ -87,7 +87,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
+  near clip plane: 0.1
   far clip plane: 1000
   field of view: 60
   orthographic: 1
@@ -119,10 +119,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_RenderShadows: 1
+  m_RenderShadows: 0
   m_RequiresDepthTextureOption: 2
   m_RequiresOpaqueTextureOption: 2
-  m_CameraType: 0
+  m_CameraType: 1
   m_Cameras: []
   m_RendererIndex: -1
   m_VolumeLayerMask:
@@ -130,12 +130,12 @@ MonoBehaviour:
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
   m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 0
+  m_RenderPostProcessing: 1
   m_Antialiasing: 0
   m_AntialiasingQuality: 2
   m_StopNaN: 0
   m_Dithering: 0
-  m_ClearDepth: 1
+  m_ClearDepth: 0
   m_AllowXRRendering: 1
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
@@ -195,6 +195,8 @@ MonoBehaviour:
         type: 3}
       number: 0
     price: 0
+    setName: Keep the mansion
+    setDescription: This is the description
   - cards:
     - prefabToSpawn: {fileID: 1910063633410339824, guid: 5cfa70bf4fae2f845bbdd39947b555af,
         type: 3}
@@ -202,7 +204,35 @@ MonoBehaviour:
     - prefabToSpawn: {fileID: 4978016310013176813, guid: afaba2d55e2052c4aae1edd07abbe5d1,
         type: 3}
       number: 0
-    price: 0
+    price: 10
+    setName: Mill the apertment
+    setDescription: Has things in it
+  - cards:
+    - prefabToSpawn: {fileID: 7081898761882237075, guid: a3575b9eeb98971418044e72e7e65a44,
+        type: 3}
+      number: 0
+    - prefabToSpawn: {fileID: 8781552269768396170, guid: d4923376d2e2dfb4a9c1fc297e3fa8ac,
+        type: 3}
+      number: 0
+    price: 20
+    setName: Green and house
+    setDescription: Very eco friendly
+  - cards:
+    - prefabToSpawn: {fileID: 9100706080293014004, guid: fb88b85e74835864485ec5cc59312a0f,
+        type: 3}
+      number: 0
+    - prefabToSpawn: {fileID: 9100706080293014004, guid: fb88b85e74835864485ec5cc59312a0f,
+        type: 3}
+      number: 0
+    - prefabToSpawn: {fileID: 9100706080293014004, guid: fb88b85e74835864485ec5cc59312a0f,
+        type: 3}
+      number: 0
+    - prefabToSpawn: {fileID: 7322123193864878799, guid: 4fee15fb1afa09f4c89e631468911357,
+        type: 3}
+      number: 0
+    price: 999
+    setName: Massikeisarin unelma
+    setDescription: Pricy trees for you
   handCam: {fileID: 2539684930756161952}
   cardPrefab: {fileID: 3747776115526019336, guid: ee2909ea8c2e0f84aaaa5a2623e3b45d,
     type: 3}
@@ -210,28 +240,17 @@ MonoBehaviour:
   cardLayers:
     serializedVersion: 2
     m_Bits: 64
-  debugCards:
-  - prefabToSpawn: {fileID: 8399097934059941140, guid: c625fdf94f2a8dc4badb9088060fc6d3,
+  freeCards:
+  - prefabToSpawn: {fileID: 7322123193864878799, guid: 4fee15fb1afa09f4c89e631468911357,
       type: 3}
     number: 0
   - prefabToSpawn: {fileID: 9100706080293014004, guid: fb88b85e74835864485ec5cc59312a0f,
       type: 3}
     number: 0
-  - prefabToSpawn: {fileID: 3812250335504214903, guid: d842c5651a1071f4082bca57ae547112,
+  - prefabToSpawn: {fileID: 4618421803460695830, guid: f75738e42e52c4b4d83ce7532b9fda04,
       type: 3}
     number: 0
-  - prefabToSpawn: {fileID: 5020840687663118144, guid: 657d13df32bf53f49a7917e866622fe1,
-      type: 3}
-    number: 0
-  - prefabToSpawn: {fileID: 647628065627256395, guid: 0907d012a1a70ad43a019bcd7bd8b4f5,
-      type: 3}
-    number: 0
-  - prefabToSpawn: {fileID: 7322123193864878799, guid: 4fee15fb1afa09f4c89e631468911357,
-      type: 3}
-    number: 0
-  - prefabToSpawn: {fileID: 1910063633410339824, guid: 5cfa70bf4fae2f845bbdd39947b555af,
-      type: 3}
-    number: 0
-  - prefabToSpawn: {fileID: 8663934055517150627, guid: 10866775e6d9cdd4cbf0e462e88ac408,
-      type: 3}
-    number: 0
+  cardSetUI:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}

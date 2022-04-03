@@ -1,12 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 [System.Serializable]
 public class HandSet
 {
-    public Card[] cards;
+    public List<Card> cards = new List<Card>();
     public int price;
+    public string setName;
+    public string setDescription;
 }
 
 public class Hand : MonoBehaviour
@@ -17,11 +20,12 @@ public class Hand : MonoBehaviour
     [SerializeField] GameObject cardPrefab;
     [SerializeField] Transform cardParent;
     [SerializeField] LayerMask cardLayers;
+    [SerializeField] List<Card> freeCards = new List<Card>();
+    [SerializeField] List<GameObject> cardSetUI = new List<GameObject>();
     List<CardObject> cards = new List<CardObject>();
     int selectedCard;
     RaycastHit hit;
-
-    [SerializeField] List<Card> debugCards = new List<Card>();
+    HandSet[] generatedHandSets = new HandSet[3];
 
     void Awake()
     {
@@ -31,7 +35,8 @@ public class Hand : MonoBehaviour
 
     void Start()
     {
-        SetCards(debugCards);
+        GenerateHandSets();
+        HideHand();
     }
 
     void Update()
@@ -86,9 +91,10 @@ public class Hand : MonoBehaviour
             if (cards.Count <= 0)
             {
                 GlobalData.rounds++;
-                SetCards(debugCards);
                 GlobalData.seaLevel += 1.0f;
+                GenerateHandSets();
                 UiController.Instance.ShowShopUI();
+                HideHand();
             }
             else
             {
@@ -109,5 +115,48 @@ public class Hand : MonoBehaviour
     public bool IsCardSelected()
     {
         return selectedCard >= 0;
+    }
+
+    void GenerateHandSets()
+    {
+        generatedHandSets[0] = handSets[Random.Range(0, handSets.Count)];
+        generatedHandSets[1] = handSets[Random.Range(0, handSets.Count)];
+        generatedHandSets[2] = handSets[Random.Range(0, handSets.Count)];
+
+        for (int i = 0; i < 3; ++i)
+        {
+            cardSetUI[i].transform.Find("Name").GetComponent<TextMeshProUGUI>().text = generatedHandSets[i].setName;
+            cardSetUI[i].transform.Find("Description").GetComponent<TextMeshProUGUI>().text = generatedHandSets[i].setDescription;
+            cardSetUI[i].transform.Find("Price").GetComponent<TextMeshProUGUI>().text = generatedHandSets[i].price.ToString() + " gold";
+        }
+    }
+
+    public void BuyHand(int hand)
+    {
+        if (GlobalData.money >= generatedHandSets[hand].price)
+        {
+            GlobalData.money -= generatedHandSets[hand].price;
+            SetCards(generatedHandSets[hand].cards);
+            UiController.Instance.ShowGamePlayUI();
+            ShowHand();
+        }
+    }
+
+    public void ShowHand()
+    {
+        cardParent.gameObject.SetActive(true);
+    }
+
+    public void HideHand()
+    {
+        cardParent.gameObject.SetActive(false);
+    }
+
+    public void FreeHand()
+    {
+        GlobalData.money += 10;
+        SetCards(freeCards);
+        UiController.Instance.ShowGamePlayUI();
+        ShowHand();
     }
 }

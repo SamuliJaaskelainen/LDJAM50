@@ -14,6 +14,6 @@ public class GlobalData : MonoBehaviour
     {
         seaLevel = 0.0f;
         population = 0;
-        money = 0;
+        money = 100;
     }
 }

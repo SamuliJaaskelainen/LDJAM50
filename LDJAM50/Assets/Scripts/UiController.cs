@@ -12,6 +12,7 @@ public class UiController : MonoBehaviour
     [SerializeField] GameObject gameOver;
     [SerializeField] GameObject settings;
     [SerializeField] GameObject shop;
+    [SerializeField] GameObject stats;
     [SerializeField] TextMeshProUGUI popText;
     [SerializeField] TextMeshProUGUI moneyText;
 
@@ -34,12 +35,14 @@ public class UiController : MonoBehaviour
         gameOver.SetActive(false);
         settings.SetActive(false);
         shop.SetActive(false);
+        stats.SetActive(false);
     }
 
     public void ShowGamePlayUI()
     {
         HideAll();
         gamePlay.SetActive(true);
+        stats.SetActive(true);
     }
 
     public void ShowMainmenuUI()
@@ -63,6 +66,7 @@ public class UiController : MonoBehaviour
     {
         HideAll();
         shop.SetActive(true);
+        stats.SetActive(true);
     }
 
     private void Update()
