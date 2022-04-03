@@ -120,7 +120,7 @@ namespace Building
 
         void Update()
         {
-            if (rb.centerOfMass.y + transform.position.y < GlobalData.seaLevel + 1.0f)
+            if (rb.centerOfMass.y + transform.position.y < GlobalData.seaLevel)
             {
                 GlobalData.population -= basePopulation;
                 MeshRenderer[] renderers = GetComponentsInChildren<MeshRenderer>();

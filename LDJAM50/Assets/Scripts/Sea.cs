@@ -8,6 +8,6 @@ public class Sea : MonoBehaviour
 
     void Update()
     {
-        transform.localPosition = Vector3.MoveTowards(transform.localPosition, new Vector3(0.0f, 1.0f + GlobalData.seaLevel, 0.0f), Time.deltaTime * riseAnimSpeed);
+        transform.localPosition = Vector3.MoveTowards(transform.localPosition, new Vector3(0.0f, GlobalData.seaLevel, 0.0f), Time.deltaTime * riseAnimSpeed);
     }
 }
