@@ -195,7 +195,7 @@ public class Hand : MonoBehaviour
             break;
 
         case "Temple":
-        	switch (Random.Range(0, 6))
+        	switch (Random.Range(0, 7))
 				{
 					case 0:
 						AudioManager.Instance.PlaySound("ChantKarjala_02");
@@ -222,7 +222,7 @@ public class Hand : MonoBehaviour
 			break;
 
         case "Cathedral":
-        	switch (Random.Range(0, 6))
+        	switch (Random.Range(0, 7))
 				{
 					case 0:
 						AudioManager.Instance.PlaySound("ChantKarjala_01");
