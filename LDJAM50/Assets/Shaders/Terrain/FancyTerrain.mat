@@ -161,7 +161,7 @@ Material:
     - _BumpScale: 1
     - _ClearCoatMask: 0
     - _ClearCoatSmoothness: 0
-    - _CliffBlend: 46.58
+    - _CliffBlend: 1000
     - _Cull: 2
     - _Cutoff: 0.5
     - _DetailAlbedoMapScale: 1
@@ -186,16 +186,18 @@ Material:
     - _QueueControl: 0
     - _QueueOffset: 0
     - _ReceiveShadows: 1
-    - _SandBlend: 0.59
+    - _SandBlend: 0.7
+    - _SandHigh: 1
+    - _SandLow: 1
     - _Smoothness: 0.5
     - _Smoothness0: 0.5
     - _Smoothness1: 0.5
     - _Smoothness2: 0.5
     - _Smoothness3: 0.5
     - _SmoothnessTextureChannel: 0
-    - _SnowBlend: 15.7
-    - _SnowHigh: 1.7
-    - _SnowLow: 5.84
+    - _SnowBlend: 16.64
+    - _SnowHigh: 3.62
+    - _SnowLow: 7.31
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _Surface: 0
