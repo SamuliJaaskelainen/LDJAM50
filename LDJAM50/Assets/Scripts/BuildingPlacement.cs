@@ -84,6 +84,19 @@ namespace Building
                 GlobalData.population += basePopulation;
                 GlobalData.faith += baseFaith;
 
+                if (baseMoney > 0)
+                {
+                    VfxPlayer.Instance.PlayVfx(0, transform.position, baseMoney);
+                }
+                if (basePopulation > 0)
+                {
+                    VfxPlayer.Instance.PlayVfx(1, transform.position, basePopulation);
+                }
+                if (baseFaith > 0)
+                {
+                    VfxPlayer.Instance.PlayVfx(2, transform.position, baseFaith);
+                }
+
                 Collider[] collisions = Physics.OverlapSphere(transform.position, radius);
                 foreach (Collider col in collisions)
                 {
