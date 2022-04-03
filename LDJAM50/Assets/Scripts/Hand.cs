@@ -92,7 +92,7 @@ public class Hand : MonoBehaviour
             cards.Add(newCard.GetComponent<CardObject>());
             cards[i].card.prefabToSpawn = newCards[i].prefabToSpawn;
             cards[i].card.number = i;
-            cards[i].Init();
+            cards[i].Init(newCards.Count);
             Debug.Log("Init card: " + cards[i].card.prefabToSpawn.name);
         }
     }
@@ -118,141 +118,139 @@ public class Hand : MonoBehaviour
         else
         {
             selectedCard = number;
-			Debug.Log("Selected card: " + cards[selectedCard].card.prefabToSpawn.name);
-			CardSFXLogic(cards[selectedCard].card.prefabToSpawn.name);
-
+            Debug.Log("Selected card: " + cards[selectedCard].card.prefabToSpawn.name);
+            CardSFXLogic(cards[selectedCard].card.prefabToSpawn.name);
         }
     }
 
     public void CardSFXLogic(string cardname)
-
     {
         switch (cardname)
         {
-        case "Mansion":
-            AudioManager.Instance.PlaySound("Select_LargeHouse");
-            break;
-        case "TallHouse":
-            AudioManager.Instance.PlaySound("Select_MediumHouse");
-            break;
-        case "LargeHouse":
-            AudioManager.Instance.PlaySound("Select_MediumHouse");
-            break;
-        case "SmallHouse":
-            AudioManager.Instance.PlaySound("Select_SmallHouse");
-            break;
-        case "Apartment":
-            AudioManager.Instance.PlaySound("Select_LargeHouse");
-            break;
-        case "Brewery":
-            AudioManager.Instance.PlaySound("Select_Brewery");
-            break;
-        case "Market":
-            AudioManager.Instance.PlaySound("Select_Market");
-            break;
+            case "Mansion":
+                AudioManager.Instance.PlaySound("Select_LargeHouse");
+                break;
+            case "TallHouse":
+                AudioManager.Instance.PlaySound("Select_MediumHouse");
+                break;
+            case "LargeHouse":
+                AudioManager.Instance.PlaySound("Select_MediumHouse");
+                break;
+            case "SmallHouse":
+                AudioManager.Instance.PlaySound("Select_SmallHouse");
+                break;
+            case "Apartment":
+                AudioManager.Instance.PlaySound("Select_LargeHouse");
+                break;
+            case "Brewery":
+                AudioManager.Instance.PlaySound("Select_Brewery");
+                break;
+            case "Market":
+                AudioManager.Instance.PlaySound("Select_Market");
+                break;
 
-        case "Park":
-            AudioManager.Instance.PlaySound("Select_Park");
-            break;
+            case "Park":
+                AudioManager.Instance.PlaySound("Select_Park");
+                break;
 
-        case "Wall":
-            AudioManager.Instance.PlaySound("Select_SmallStone");
-            break;
+            case "Wall":
+                AudioManager.Instance.PlaySound("Select_SmallStone");
+                break;
 
-        case "Lighthouse":
-            AudioManager.Instance.PlaySound("Select_MediumStone");
-            break;
+            case "Lighthouse":
+                AudioManager.Instance.PlaySound("Select_MediumStone");
+                break;
 
-        case "Keep":
-            AudioManager.Instance.PlaySound("Select_LargeStone");
-            break;
+            case "Keep":
+                AudioManager.Instance.PlaySound("Select_LargeStone");
+                break;
 
-        case "Farm":
-			switch (Random.Range(0, 2))
-				{
-					case 0:
-						AudioManager.Instance.PlaySound("Select_Farm1");
-						break;
- 	           		case 1:
- 	               		AudioManager.Instance.PlaySound("Select_Farm2");
- 	               		break;
-				}
-            break;
+            case "Farm":
+                switch (Random.Range(0, 2))
+                {
+                    case 0:
+                        AudioManager.Instance.PlaySound("Select_Farm1");
+                        break;
+                    case 1:
+                        AudioManager.Instance.PlaySound("Select_Farm2");
+                        break;
+                }
+                break;
 
-        case "Shrine":
-			switch (Random.Range(0, 3))
-				{
-					case 0:
-						AudioManager.Instance.PlaySound("Select_Shrine1");
-						break;
- 	           		case 1:
- 	               		AudioManager.Instance.PlaySound("Select_Shrine2");
- 	               		break;
- 	           		case 2:
- 	               		AudioManager.Instance.PlaySound("Select_Shrine3");
- 	               		break;
-				}
-            break;
+            case "Shrine":
+                switch (Random.Range(0, 3))
+                {
+                    case 0:
+                        AudioManager.Instance.PlaySound("Select_Shrine1");
+                        break;
+                    case 1:
+                        AudioManager.Instance.PlaySound("Select_Shrine2");
+                        break;
+                    case 2:
+                        AudioManager.Instance.PlaySound("Select_Shrine3");
+                        break;
+                }
+                break;
 
-        case "Temple":
-        	switch (Random.Range(0, 6))
-				{
-					case 0:
-						AudioManager.Instance.PlaySound("ChantKarjala_02");
-						break;
- 	           		case 1:
- 	               		AudioManager.Instance.PlaySound("ChantOmena_02");
- 	               		break;
- 	           		case 2:
- 	               		AudioManager.Instance.PlaySound("ChantPeruna_02");
- 	               		break;
-	           		case 3:
-						AudioManager.Instance.PlaySound("ChantPiirakka_02");
-	               		break;
-	           		case 4:
-	               		AudioManager.Instance.PlaySound("ChantPorkkana_02");
- 	               		break;
-   	        		case 5:
-	               		AudioManager.Instance.PlaySound("ChantSaatana_02");
-	                	break;
- 	        		case 6:
-	               		AudioManager.Instance.PlaySound("ChantPerkele_02");
-	                	break;
-	        	}
-			break;
+            case "Temple":
+                switch (Random.Range(0, 6))
+                {
+                    case 0:
+                        AudioManager.Instance.PlaySound("ChantKarjala_02");
+                        break;
+                    case 1:
+                        AudioManager.Instance.PlaySound("ChantOmena_02");
+                        break;
+                    case 2:
+                        AudioManager.Instance.PlaySound("ChantPeruna_02");
+                        break;
+                    case 3:
+                        AudioManager.Instance.PlaySound("ChantPiirakka_02");
+                        break;
+                    case 4:
+                        AudioManager.Instance.PlaySound("ChantPorkkana_02");
+                        break;
+                    case 5:
+                        AudioManager.Instance.PlaySound("ChantSaatana_02");
+                        break;
+                    case 6:
+                        AudioManager.Instance.PlaySound("ChantPerkele_02");
+                        break;
+                }
+                break;
 
-        case "Cathedral":
-        	switch (Random.Range(0, 6))
-				{
-					case 0:
-						AudioManager.Instance.PlaySound("ChantKarjala_01");
-						break;
- 	           		case 1:
- 	               		AudioManager.Instance.PlaySound("ChantOmena_01");
- 	               		break;
- 	           		case 2:
- 	               		AudioManager.Instance.PlaySound("ChantPeruna_01");
- 	               		break;
-	           		case 3:
-						AudioManager.Instance.PlaySound("ChantPiirakka_01");
-	               		break;
-	           		case 4:
-	               		AudioManager.Instance.PlaySound("ChantPorkkana_01");
- 	               		break;
-   	        		case 5:
-	               		AudioManager.Instance.PlaySound("ChantSaatana_01");
-	                	break;
- 	        		case 6:
-	               		AudioManager.Instance.PlaySound("ChantPerkele_01");
-	                	break;
-	        	}
-			break;
+            case "Cathedral":
+                switch (Random.Range(0, 6))
+                {
+                    case 0:
+                        AudioManager.Instance.PlaySound("ChantKarjala_01");
+                        break;
+                    case 1:
+                        AudioManager.Instance.PlaySound("ChantOmena_01");
+                        break;
+                    case 2:
+                        AudioManager.Instance.PlaySound("ChantPeruna_01");
+                        break;
+                    case 3:
+                        AudioManager.Instance.PlaySound("ChantPiirakka_01");
+                        break;
+                    case 4:
+                        AudioManager.Instance.PlaySound("ChantPorkkana_01");
+                        break;
+                    case 5:
+                        AudioManager.Instance.PlaySound("ChantSaatana_01");
+                        break;
+                    case 6:
+                        AudioManager.Instance.PlaySound("ChantPerkele_01");
+                        break;
+                }
+                break;
 
-        default:
-            AudioManager.Instance.PlaySound("deselect");
-            break;
+            default:
+                AudioManager.Instance.PlaySound("deselect");
+                break;
         }
-	}
+    }
 
     public void SplitCard(int number)
     {
@@ -310,7 +308,7 @@ public class Hand : MonoBehaviour
     public void UnselectCard()
     {
         selectedCard = -1;
-		
+        AudioManager.Instance.PlaySound("deselect");
     }
 
     public bool IsCardSelected()
