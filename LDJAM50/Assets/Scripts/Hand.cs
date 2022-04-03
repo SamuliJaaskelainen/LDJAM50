@@ -194,7 +194,7 @@ public class Hand : MonoBehaviour
 				}
             break;
 
-        case "Chapel":
+        case "Temple":
         	switch (Random.Range(0, 6))
 				{
 					case 0:
