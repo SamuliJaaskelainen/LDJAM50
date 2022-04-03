@@ -436,25 +436,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 278631372, guid: 011142a370147314dbd7704e4afc2129, type: 3}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
-    - target: {fileID: 4703479352374060948, guid: 011142a370147314dbd7704e4afc2129,
-        type: 3}
-      propertyPath: m_CullingMask.m_Bits
-      value: 55
-      objectReference: {fileID: 0}
-    - target: {fileID: 4703479352374060950, guid: 011142a370147314dbd7704e4afc2129,
-        type: 3}
-      propertyPath: m_Dithering
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4703479352374060950, guid: 011142a370147314dbd7704e4afc2129,
-        type: 3}
-      propertyPath: m_Cameras.Array.size
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4703479352374060950, guid: 011142a370147314dbd7704e4afc2129,
         type: 3}
       propertyPath: m_Cameras.Array.data[0]

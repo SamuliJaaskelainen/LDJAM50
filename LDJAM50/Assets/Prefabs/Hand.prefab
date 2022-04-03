@@ -240,6 +240,7 @@ MonoBehaviour:
   cardLayers:
     serializedVersion: 2
     m_Bits: 64
+  freeMoney: 10
   freeCards:
   - prefabToSpawn: {fileID: 7322123193864878799, guid: 4fee15fb1afa09f4c89e631468911357,
       type: 3}
@@ -250,6 +251,7 @@ MonoBehaviour:
   - prefabToSpawn: {fileID: 4618421803460695830, guid: f75738e42e52c4b4d83ce7532b9fda04,
       type: 3}
     number: 0
+  randomAddCards: []
   cardSetUI:
   - {fileID: 0}
   - {fileID: 0}

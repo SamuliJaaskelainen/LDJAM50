@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 9201242859908598892}
   - component: {fileID: 2279625827105151367}
   - component: {fileID: 5133740812288212468}
+  - component: {fileID: -6717805042687985685}
   m_Layer: 6
   m_Name: Card
   m_TagString: Untagged
@@ -44,7 +45,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 3
+  m_Radius: 6
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &5133740812288212468
 MonoBehaviour:
@@ -61,3 +62,15 @@ MonoBehaviour:
   card:
     prefabToSpawn: {fileID: 0}
     number: 0
+--- !u!114 &-6717805042687985685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3747776115526019336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8444e227bb63b9499dc3489548e8a85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

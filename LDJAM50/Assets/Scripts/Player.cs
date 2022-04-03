@@ -81,7 +81,7 @@ public class Player : MonoBehaviour
         if (Physics.Raycast(ray, out hit, 99999.0f))
         {
             Debug.DrawLine(cam.transform.position, hit.point, Color.green);
-            Vector3 cursorPos = hit.point + Vector3.up * 1.0f;
+            Vector3 cursorPos = hit.point + Vector3.up * 3.0f;
             cursor.position = cursorPos;
             if (Input.GetMouseButtonDown(0) && wasCardSelected && Hand.Instance.IsCardSelected())
             {

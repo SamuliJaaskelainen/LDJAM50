@@ -111,4 +111,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e205b842368270a48ba7b76e672238d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  riseAnimSpeed: 1
+  riseAnimSpeed: 0.75
