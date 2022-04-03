@@ -193,7 +193,7 @@ public class Hand : MonoBehaviour
                 break;
 
             case "Temple":
-                switch (Random.Range(0, 6))
+                switch (Random.Range(0, 7))
                 {
                     case 0:
                         AudioManager.Instance.PlaySound("ChantKarjala_02");
@@ -220,7 +220,7 @@ public class Hand : MonoBehaviour
                 break;
 
             case "Cathedral":
-                switch (Random.Range(0, 6))
+                switch (Random.Range(0, 7))
                 {
                     case 0:
                         AudioManager.Instance.PlaySound("ChantKarjala_01");
@@ -335,6 +335,18 @@ public class Hand : MonoBehaviour
         if (GlobalData.money >= generatedHandSets[hand].price)
         {
             GlobalData.money -= generatedHandSets[hand].price;
+            switch (Random.Range(0, 3))
+            {
+                case 0:
+                    AudioManager.Instance.PlaySound("HandPurchase01");
+                    break;
+                case 1:
+                    AudioManager.Instance.PlaySound("HandPurchase02");
+                    break;
+                case 2:
+                    AudioManager.Instance.PlaySound("HandPurchase03");
+                    break;
+            }
             SetCards(generatedHandSets[hand].cards);
             UiController.Instance.ShowGamePlayUI();
             ShowHand();
