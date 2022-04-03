@@ -328,8 +328,8 @@ MonoBehaviour:
   maxX: 30
   minHeight: 60
   maxHeight: 3
-  movementSpeedMouse: 2
-  movementSpeedKeys: 12
+  movementSpeedMouse: 3
+  movementSpeedKeys: 30
   orbitSpeedMouse: 14
   orbitSpeedKeys: 75
   rotateCursorMultiplier: 10
