@@ -20,6 +20,7 @@ public class UiController : MonoBehaviour
     [SerializeField] TextMeshProUGUI moneyText;
     [SerializeField] Slider quality;
     [SerializeField] UniversalRenderPipelineAsset settingsAsset;
+    [SerializeField] TextMeshProUGUI roundsSurvived;
 
     void Awake()
     {
@@ -59,6 +60,7 @@ public class UiController : MonoBehaviour
     public void ShowGameOverUI()
     {
         HideAll();
+        roundsSurvived.text = "You survived " + GlobalData.rounds + " rounds.";
         gameOver.SetActive(true);
     }
 
