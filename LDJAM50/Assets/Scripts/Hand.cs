@@ -2,9 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[System.Serializable]
+public class HandSet
+{
+    public Card[] cards;
+    public int price;
+}
+
 public class Hand : MonoBehaviour
 {
     public static Hand Instance;
+    [SerializeField] List<HandSet> handSets = new List<HandSet>();
     [SerializeField] Camera handCam;
     [SerializeField] GameObject cardPrefab;
     [SerializeField] Transform cardParent;

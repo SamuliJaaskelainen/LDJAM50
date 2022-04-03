@@ -186,6 +186,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a170e741ab7ded48b1a89fc1b2123f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  handSets:
+  - cards:
+    - prefabToSpawn: {fileID: 541469230629098936, guid: 50f99620372c8c44aafb57d2b43b359c,
+        type: 3}
+      number: 0
+    - prefabToSpawn: {fileID: 313339576241506123, guid: 7651148fd7fe6af4586b04a4543c6fa9,
+        type: 3}
+      number: 0
+    price: 0
+  - cards:
+    - prefabToSpawn: {fileID: 1910063633410339824, guid: 5cfa70bf4fae2f845bbdd39947b555af,
+        type: 3}
+      number: 0
+    - prefabToSpawn: {fileID: 4978016310013176813, guid: afaba2d55e2052c4aae1edd07abbe5d1,
+        type: 3}
+      number: 0
+    price: 0
   handCam: {fileID: 2539684930756161952}
   cardPrefab: {fileID: 3747776115526019336, guid: ee2909ea8c2e0f84aaaa5a2623e3b45d,
     type: 3}
