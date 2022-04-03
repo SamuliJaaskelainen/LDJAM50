@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="af7671ff-8049-4dc7-80ba-55c257d6e71a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/../Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/../Scenes/Main.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Hand.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Scripts.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Scripts.dir/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -11,6 +11,8 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/SeaLevelListener.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Sea.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../GGJ2022/Assets/Scripts/Ship.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../GGJ2022/Assets/Scripts/OnHitSound.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/CardObject.cs" root0="SKIP_HIGHLIGHTING" />
@@ -34,6 +36,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -51,7 +54,7 @@
       <workItem from="1648984624989" duration="473000" />
       <workItem from="1648986717827" duration="393000" />
       <workItem from="1648999527661" duration="2000" />
-      <workItem from="1648999773088" duration="7468000" />
+      <workItem from="1648999773088" duration="9421000" />
     </task>
     <servers />
   </component>
@@ -61,6 +64,17 @@
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
