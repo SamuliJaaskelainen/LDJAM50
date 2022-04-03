@@ -87,7 +87,7 @@ public class Hand : MonoBehaviour
             {
                 GlobalData.rounds++;
                 SetCards(debugCards);
-                // TODO: Increase sea level
+                GlobalData.seaLevel += 1.0f;
                 UiController.Instance.ShowShopUI();
             }
             else
