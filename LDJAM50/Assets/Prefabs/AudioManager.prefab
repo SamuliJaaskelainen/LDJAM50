@@ -723,8 +723,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e067ceb6e38a5d249b8726213c8d307f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundEffects: []
-  cardSounds:
+  soundEffects:
   - {fileID: 8300000, guid: 2a3e8996044ee1449b5f1a3ba69a25a7, type: 3}
   - {fileID: 8300000, guid: cfeef55adc4ec474396e6f18df8b41be, type: 3}
   - {fileID: 8300000, guid: 16c7fcc5f76b65d4ba43ec9fc22315d8, type: 3}
@@ -732,32 +731,23 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 5b4de9ab398b07b489904d3f09ebd7d6, type: 3}
   - {fileID: 8300000, guid: 5913790d9de449a419a6156663d3b791, type: 3}
   - {fileID: 8300000, guid: 19acf745cfc959e48ad5c02d378fe87d, type: 3}
-  - {fileID: 8300000, guid: ead1e33b4b81e47499f60e9dcec9d965, type: 3}
-  - {fileID: 8300000, guid: 87209b212a9691f4aa3fabdd44222446, type: 3}
-  - {fileID: 8300000, guid: 8997c4c91e502b04e86d6cf281c49a21, type: 3}
-  - {fileID: 8300000, guid: 4520a6f895c1a5343b89b232af57802e, type: 3}
-  - {fileID: 8300000, guid: 1017a5b6259e3654f9832a104e08cc0c, type: 3}
-  - {fileID: 8300000, guid: 4ea35c1c4ca29d54584b531ddd71024f, type: 3}
   - {fileID: 8300000, guid: 885f83056c3a1234795749349521f4c4, type: 3}
-  - {fileID: 8300000, guid: 4446b20edef5a3b4995d3be71dac7fb7, type: 3}
-  - {fileID: 8300000, guid: 349851cbd66f69e46843acbd6c655002, type: 3}
   - {fileID: 8300000, guid: 12fac66f89361e7429554990d97fb897, type: 3}
   - {fileID: 8300000, guid: f36429b82e57b244489406fba05eca3f, type: 3}
-  uiSounds:
-  - {fileID: 8300000, guid: 148856c11ce088e41912e51bfa4e7744, type: 3}
+  - {fileID: 8300000, guid: 8997c4c91e502b04e86d6cf281c49a21, type: 3}
+  - {fileID: 8300000, guid: 4ea35c1c4ca29d54584b531ddd71024f, type: 3}
+  - {fileID: 8300000, guid: 4446b20edef5a3b4995d3be71dac7fb7, type: 3}
+  - {fileID: 8300000, guid: 87209b212a9691f4aa3fabdd44222446, type: 3}
+  - {fileID: 8300000, guid: 1017a5b6259e3654f9832a104e08cc0c, type: 3}
+  - {fileID: 8300000, guid: 349851cbd66f69e46843acbd6c655002, type: 3}
+  - {fileID: 8300000, guid: ead1e33b4b81e47499f60e9dcec9d965, type: 3}
+  - {fileID: 8300000, guid: 4520a6f895c1a5343b89b232af57802e, type: 3}
   - {fileID: 8300000, guid: 84c8662704c996b42aac140394af005f, type: 3}
   - {fileID: 8300000, guid: df032391b43d86e4d8416ba8afb2ece5, type: 3}
   - {fileID: 8300000, guid: c6d7d10e16f54544b9d2fbda1b0256b5, type: 3}
   - {fileID: 8300000, guid: 27eed07bd9374dc4f97592119cea4f9b, type: 3}
-  musicLayers:
-  - {fileID: 4955235445111059701}
-  - {fileID: 4955235445346425364}
-  - {fileID: 4955235446101181058}
-  - {fileID: 4955235446617766727}
-  - {fileID: 4955235444657598608}
-  - {fileID: 4955235445674244127}
-  - {fileID: 4955235445428131284}
-  audioPrefab: {fileID: 2926104041387123530, guid: c10134d40cd20154f9486b11fdbbfbf5,
+  - {fileID: 8300000, guid: 148856c11ce088e41912e51bfa4e7744, type: 3}
+  audioPrefab: {fileID: 406224211936203774, guid: 61d85745d8c94d8419a63869bfa6d4bf,
     type: 3}
 --- !u!1 &4955235446101181056
 GameObject:

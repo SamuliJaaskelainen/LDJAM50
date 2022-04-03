@@ -5,8 +5,6 @@ using UnityEngine;
 public class AudioManager : MonoBehaviour
 {
     public AudioClip[] soundEffects;
-    public AudioClip[] cardSounds;
-    public AudioClip[] uiSounds;
 
     public GameObject audioPrefab;
    
@@ -29,40 +27,40 @@ public class AudioManager : MonoBehaviour
 
     }
 
-    public void PlaySound(AudioClip audioClip, Vector3 position, float volume = 1.0f, float pitch = 1.0f)
+    public void PlaySound(AudioClip audioClip, float volume = 1.0f, float pitch = 1.0f)
     {
         for (int i = 0; i < soundEffects.Length; ++i)
         {
             if (soundEffects[i].name == audioClip.name)
             {
-                PlaySound(i, position, volume, pitch);
+                PlaySound(i, volume, pitch);
                 break;
             }
         }
     }
 
-    public void PlaySound(AudioClip[] audioClips, Vector3 position, float volume = 1.0f, float pitch = 1.0f)
+    public void PlaySound(AudioClip[] audioClips, float volume = 1.0f, float pitch = 1.0f)
     {
         AudioClip audioClip = audioClips[Random.Range(0, audioClips.Length)];
         if (audioClip != null)
         {
-            PlaySound(audioClip, position, volume, pitch);
+            PlaySound(audioClip, volume, pitch);
         }
     }
 
-    public void PlaySound(string clipName, Vector3 position, float volume = 1.0f, float pitch = 1.0f)
+    public void PlaySound(string clipName, float volume = 1.0f, float pitch = 1.0f)
     {
         for (int i = 0; i < soundEffects.Length; ++i)
         {
             if (soundEffects[i].name == clipName)
             {
-                PlaySound(i, position, volume, pitch);
+                PlaySound(i, volume, pitch);
                 break;
             }
         }
     }
 
-    public void PlaySound(int clipIndex, Vector3 position, float volume = 1.0f, float pitch = 1.0f)
+    public void PlaySound(int clipIndex, float volume = 1.0f, float pitch = 1.0f)
     {
         if (clipIndex >= soundEffects.Length)
         {
@@ -75,8 +73,7 @@ public class AudioManager : MonoBehaviour
 
         if (audioSource != null)
         {
-            audioPoolObject.RemoveAt(0);
-            audioSource.transform.position = position;
+            //audioPoolObject.RemoveAt(0);
             audioSource.clip = soundEffects[clipIndex];
             audioSource.volume = volume;
             audioSource.pitch = pitch;
