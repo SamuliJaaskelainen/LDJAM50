@@ -134,6 +134,10 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _Triplanar_1971c4d341da477c81997f42f5cbb06f_Texture_1:
+        m_Texture: {fileID: 2800000, guid: dffef66376be4fa480fb02b19edbe903, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _Triplanar_3e51682851e847d994017c2eeab553e9_Texture_1:
         m_Texture: {fileID: 2800000, guid: 11154d936b05e66498f68fa178c5cfbb, type: 3}
         m_Scale: {x: 1, y: 1}
@@ -157,6 +161,7 @@ Material:
     - _BumpScale: 1
     - _ClearCoatMask: 0
     - _ClearCoatSmoothness: 0
+    - _CliffBlend: 0
     - _Cull: 2
     - _Cutoff: 0.5
     - _DetailAlbedoMapScale: 1
@@ -188,6 +193,9 @@ Material:
     - _Smoothness2: 0.5
     - _Smoothness3: 0.5
     - _SmoothnessTextureChannel: 0
+    - _SnowBlend: 17.55
+    - _SnowHigh: 7.79
+    - _SnowLow: 4.76
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _Surface: 0
