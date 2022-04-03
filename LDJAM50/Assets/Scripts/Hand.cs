@@ -168,7 +168,7 @@ public class Hand : MonoBehaviour
             break;
 
         case "Farm":
-			switch (Random.Range(0, 1))
+			switch (Random.Range(0, 2))
 				{
 					case 0:
 						AudioManager.Instance.PlaySound("Select_Farm1");
@@ -178,6 +178,48 @@ public class Hand : MonoBehaviour
  	               		break;
 				}
             break;
+
+        case "Shrine":
+			switch (Random.Range(0, 3))
+				{
+					case 0:
+						AudioManager.Instance.PlaySound("Select_Shrine1");
+						break;
+ 	           		case 1:
+ 	               		AudioManager.Instance.PlaySound("Select_Shrine2");
+ 	               		break;
+ 	           		case 2:
+ 	               		AudioManager.Instance.PlaySound("Select_Shrine3");
+ 	               		break;
+				}
+            break;
+
+        case "Chapel":
+        	switch (Random.Range(0, 6))
+				{
+					case 0:
+						AudioManager.Instance.PlaySound("ChantKarjala_02");
+						break;
+ 	           		case 1:
+ 	               		AudioManager.Instance.PlaySound("ChantOmena_02");
+ 	               		break;
+ 	           		case 2:
+ 	               		AudioManager.Instance.PlaySound("ChantPeruna_02");
+ 	               		break;
+	           		case 3:
+						AudioManager.Instance.PlaySound("ChantPiirakka_02");
+	               		break;
+	           		case 4:
+	               		AudioManager.Instance.PlaySound("ChantPorkkana_02");
+ 	               		break;
+   	        		case 5:
+	               		AudioManager.Instance.PlaySound("ChantSaatana_02");
+	                	break;
+ 	        		case 6:
+	               		AudioManager.Instance.PlaySound("ChantPerkele_02");
+	                	break;
+	        	}
+			break;
 
         case "Cathedral":
         	switch (Random.Range(0, 6))
