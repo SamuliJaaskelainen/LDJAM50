@@ -12,6 +12,13 @@ public class HandSet
     public string setDescription;
 }
 
+[System.Serializable]
+public class CardSplitData
+{
+    public GameObject prefabToSplit;
+    public List<Card> splitResult = new List<Card>();
+}
+
 public class Hand : MonoBehaviour
 {
     public static Hand Instance;
@@ -24,6 +31,7 @@ public class Hand : MonoBehaviour
     [SerializeField] List<Card> freeCards = new List<Card>();
     [SerializeField] List<Card> randomAddCards = new List<Card>();
     [SerializeField] List<GameObject> cardSetUI = new List<GameObject>();
+    [SerializeField] List<CardSplitData> splits = new List<CardSplitData>();
     List<CardObject> cards = new List<CardObject>();
     int selectedCard;
     RaycastHit hit;
@@ -55,10 +63,28 @@ public class Hand : MonoBehaviour
                 }
             }
         }
+        else if (Input.GetMouseButtonDown(1))
+        {
+            Ray ray = handCam.ScreenPointToRay(Input.mousePosition);
+            if (Physics.Raycast(ray, out hit, 99999.0f, cardLayers))
+            {
+                CardObject cardObject = hit.transform.GetComponent<CardObject>();
+                if (cardObject != null)
+                {
+                    SplitCard(cardObject.card.number);
+                }
+            }
+        }
     }
 
     public void SetCards(List<Card> newCards)
     {
+        for (int i = 0; i < cards.Count; ++i)
+        {
+            Destroy(cards[i].gameObject);
+        }
+        cards.Clear();
+
         cards = new List<CardObject>();
         for (int i = 0; i < newCards.Count; ++i)
         {
@@ -67,7 +93,20 @@ public class Hand : MonoBehaviour
             cards[i].card.prefabToSpawn = newCards[i].prefabToSpawn;
             cards[i].card.number = i;
             cards[i].Init();
+            Debug.Log("Init card: " + cards[i].card.prefabToSpawn.name);
         }
+    }
+
+    public void AddToHand(List<Card> newCards)
+    {
+        List<Card> allCards = new List<Card>();
+        foreach (CardObject cardObject in cards)
+        {
+            Card card = cardObject.card;
+            allCards.Add(card);
+        }
+        allCards.AddRange(newCards);
+        SetCards(allCards);
     }
 
     public void SelectCard(int number)
@@ -79,6 +118,19 @@ public class Hand : MonoBehaviour
         else
         {
             selectedCard = number;
+        }
+    }
+
+    public void SplitCard(int number)
+    {
+        foreach (CardSplitData splitData in splits)
+        {
+            if (cards[number].card.prefabToSpawn == splitData.prefabToSplit)
+            {
+                Destroy(cards[number].gameObject);
+                cards.RemoveAt(number);
+                AddToHand(splitData.splitResult);
+            }
         }
     }
 
