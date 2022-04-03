@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
+using UnityEngine.Rendering;
+using UnityEngine.Rendering.Universal;
 
 public class UiController : MonoBehaviour
 {
@@ -15,6 +18,8 @@ public class UiController : MonoBehaviour
     [SerializeField] GameObject stats;
     [SerializeField] TextMeshProUGUI popText;
     [SerializeField] TextMeshProUGUI moneyText;
+    [SerializeField] Slider quality;
+    [SerializeField] UniversalRenderPipelineAsset settingsAsset;
 
     void Awake()
     {
@@ -59,9 +64,14 @@ public class UiController : MonoBehaviour
 
     public void ShowSettingsUI()
     {
-        HideAll();
         settings.SetActive(true);
     }
+
+    public void HideSettingsUI()
+    {
+        settings.SetActive(false);
+    }
+
     public void ShowShopUI()
     {
         HideAll();
@@ -73,5 +83,33 @@ public class UiController : MonoBehaviour
     {
         popText.text = GlobalData.population.ToString();
         moneyText.text = GlobalData.money.ToString();
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (settings.activeSelf)
+            {
+                HideSettingsUI();
+            }
+            else
+            {
+                ShowSettingsUI();
+            }
+        }
+    }
+
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
+
+    public void SetRenderScale()
+    {
+        var urpAsset = (UniversalRenderPipelineAsset)GraphicsSettings.renderPipelineAsset;
+        urpAsset.renderScale = quality.value;
+    }
+
+    public void ToggleFullScreen()
+    {
+        Screen.fullScreen = !Screen.fullScreen;
     }
 }
