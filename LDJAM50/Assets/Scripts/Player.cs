@@ -9,6 +9,7 @@ public class Player : MonoBehaviour
     [SerializeField] Transform cursor;
     [SerializeField] Camera cam;
     [SerializeField] Transform camParent;
+    [SerializeField] Transform placementCursor;
     [SerializeField] float zoomSpeed = 1.0f;
     [SerializeField] float zoomMovementMultiplier = 1.0f;
     [SerializeField] float minX = 90.0f;
@@ -81,6 +82,7 @@ public class Player : MonoBehaviour
         if (Physics.Raycast(ray, out hit, 99999.0f))
         {
             Debug.DrawLine(cam.transform.position, hit.point, Color.green);
+            placementCursor.transform.position = hit.point;
             Vector3 cursorPos = hit.point + Vector3.up * 3.0f;
             cursor.position = cursorPos;
             if (Input.GetMouseButtonDown(0) && wasCardSelected && Hand.Instance.IsCardSelected())
