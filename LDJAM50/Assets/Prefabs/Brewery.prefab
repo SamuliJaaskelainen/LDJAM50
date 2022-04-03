@@ -58,10 +58,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81373ecef61a187459368fac980caa60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  type: 0
-  synergies: []
-  baseMoney: 0
-  basePopulation: 0
+  jsonFileName: 
+  type: 9
+  synergies:
+  - buildingType: 1
+    money: 5
+    population: 0
+    faith: 0
+  - buildingType: 4
+    money: 10
+    population: 0
+    faith: 1
+  - buildingType: 11
+    money: 10
+    population: 0
+    faith: 0
+  - buildingType: 12
+    money: 5
+    population: 0
+    faith: 0
+  - buildingType: 8
+    money: 10
+    population: 0
+    faith: 1
+  - buildingType: 6
+    money: 5
+    population: 0
+    faith: 0
+  baseMoney: 20
+  basePopulation: 5
   baseFaith: 0
 --- !u!23 &7150738117747407990
 MeshRenderer:
