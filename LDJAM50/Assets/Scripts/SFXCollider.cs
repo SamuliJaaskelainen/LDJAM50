@@ -9,8 +9,8 @@ public class SFXCollider : MonoBehaviour
 
     void Start()
     {
-        audioSource = GetComponent<AudioSource>();
-    }
+        audioSource = gameObject.AddComponent<AudioSource>(); 
+        }
 
     void OnCollisionEnter(Collision other)
     {
