@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="af7671ff-8049-4dc7-80ba-55c257d6e71a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/SFXCollider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SFXCollider.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Audio/pop.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Audio/pop.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Audio/restart.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Audio/restart.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Scripts.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Scripts.dir/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,8 +16,10 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/../../../../GGJ2022/Assets/Scripts/Ship.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../GGJ2022/Assets/Scripts/OnHitSound.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CardObject.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../GGJ2022/Assets/Scripts/AudioManager.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/SFXCollider.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/UiController.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -44,6 +50,8 @@
       <workItem from="1648984466434" duration="5000" />
       <workItem from="1648984624989" duration="473000" />
       <workItem from="1648986717827" duration="393000" />
+      <workItem from="1648999527661" duration="2000" />
+      <workItem from="1648999773088" duration="1077000" />
     </task>
     <servers />
   </component>

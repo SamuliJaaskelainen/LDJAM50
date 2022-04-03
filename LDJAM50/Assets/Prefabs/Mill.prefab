@@ -78,10 +78,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81373ecef61a187459368fac980caa60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  jsonFileName: 
   type: 10
-  synergies: []
-  baseMoney: 0
-  basePopulation: 0
+  synergies:
+  - buildingType: 1
+    money: 2
+    population: 0
+    faith: 0
+  - buildingType: 4
+    money: 5
+    population: 0
+    faith: 0
+  - buildingType: 8
+    money: 10
+    population: 0
+    faith: 0
+  - buildingType: 6
+    money: 10
+    population: 0
+    faith: 0
+  - buildingType: 9
+    money: 10
+    population: 0
+    faith: 0
+  baseMoney: 10
+  basePopulation: 2
   baseFaith: 0
 --- !u!114 &1263274300740319395
 MonoBehaviour:
