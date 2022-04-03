@@ -20,7 +20,9 @@ public class Hand : MonoBehaviour
     [SerializeField] GameObject cardPrefab;
     [SerializeField] Transform cardParent;
     [SerializeField] LayerMask cardLayers;
+    [SerializeField] int freeMoney = 10;
     [SerializeField] List<Card> freeCards = new List<Card>();
+    [SerializeField] List<Card> randomAddCards = new List<Card>();
     [SerializeField] List<GameObject> cardSetUI = new List<GameObject>();
     List<CardObject> cards = new List<CardObject>();
     int selectedCard;
@@ -92,6 +94,7 @@ public class Hand : MonoBehaviour
             {
                 GlobalData.rounds++;
                 GlobalData.seaLevel += 1.0f;
+                GlobalData.faith /= 2;
                 GenerateHandSets();
                 Invoke("ResolveRound", 2.0f);
                 HideHand();
@@ -166,7 +169,7 @@ public class Hand : MonoBehaviour
 
     public void FreeHand()
     {
-        GlobalData.money += 10;
+        GlobalData.money += freeMoney;
         SetCards(freeCards);
         UiController.Instance.ShowGamePlayUI();
         ShowHand();
