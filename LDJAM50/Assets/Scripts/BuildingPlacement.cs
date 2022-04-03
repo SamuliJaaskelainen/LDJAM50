@@ -43,37 +43,58 @@ namespace Building
         [SerializeField] int basePopulation;
         [SerializeField] int baseFaith;
 
+        Rigidbody rb;
         float radius;
+        bool firstCollision = true;
 
         void Awake()
         {
             SphereCollider sphereCollider = GetComponent<SphereCollider>();
             radius = sphereCollider.radius;
+            rb = GetComponent<Rigidbody>();
             Destroy(sphereCollider);
         }
 
         void OnCollisionEnter(Collision other)
         {
-            GlobalData.money += baseMoney;
-            GlobalData.population += basePopulation;
-            GlobalData.faith += baseFaith;
-
-            Collider[] collisions = Physics.OverlapSphere(transform.position, radius);
-            foreach (Collider col in collisions)
+            if (firstCollision)
             {
-                BuildingPlacement building = GetComponent<BuildingPlacement>();
-                if (building)
+                GlobalData.money += baseMoney;
+                GlobalData.population += basePopulation;
+                GlobalData.faith += baseFaith;
+
+                Collider[] collisions = Physics.OverlapSphere(transform.position, radius);
+                foreach (Collider col in collisions)
                 {
-                    foreach (Synergy synergy in synergies)
+                    BuildingPlacement building = GetComponent<BuildingPlacement>();
+                    if (building)
                     {
-                        if (synergy.buildingType == building.type)
+                        foreach (Synergy synergy in synergies)
                         {
-                            GlobalData.money += synergy.money;
-                            GlobalData.population += synergy.population;
-                            GlobalData.faith += synergy.faith;
+                            if (synergy.buildingType == building.type)
+                            {
+                                GlobalData.money += synergy.money;
+                                GlobalData.population += synergy.population;
+                                GlobalData.faith += synergy.faith;
+                            }
                         }
                     }
                 }
+                firstCollision = false;
+            }
+        }
+
+        void Update()
+        {
+            if (rb.centerOfMass.y + transform.position.y < GlobalData.seaLevel + 1.0f)
+            {
+                GlobalData.population -= basePopulation;
+                MeshRenderer[] renderers = GetComponentsInChildren<MeshRenderer>();
+                foreach (MeshRenderer renderer in renderers)
+                {
+                    renderer.material = Resources.Load<Material>("AtlasWet");
+                }
+                enabled = false;
             }
         }
     }

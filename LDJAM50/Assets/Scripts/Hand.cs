@@ -93,7 +93,7 @@ public class Hand : MonoBehaviour
                 GlobalData.rounds++;
                 GlobalData.seaLevel += 1.0f;
                 GenerateHandSets();
-                UiController.Instance.ShowShopUI();
+                Invoke("ResolveRound", 2.0f);
                 HideHand();
             }
             else
@@ -105,6 +105,18 @@ public class Hand : MonoBehaviour
             }
         }
         UnselectCard();
+    }
+
+    void ResolveRound()
+    {
+        if (GlobalData.population <= 0)
+        {
+            UiController.Instance.ShowGameOverUI();
+        }
+        else
+        {
+            UiController.Instance.ShowShopUI();
+        }
     }
 
     public void UnselectCard()

@@ -112,4 +112,9 @@ public class UiController : MonoBehaviour
     {
         Screen.fullScreen = !Screen.fullScreen;
     }
+
+    public void Restart()
+    {
+        UnityEngine.SceneManagement.SceneManager.LoadScene(0);
+    }
 }
