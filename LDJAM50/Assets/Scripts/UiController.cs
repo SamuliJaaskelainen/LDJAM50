@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class UiController : MonoBehaviour
 {
@@ -11,10 +12,14 @@ public class UiController : MonoBehaviour
     [SerializeField] GameObject gameOver;
     [SerializeField] GameObject settings;
     [SerializeField] GameObject shop;
+    [SerializeField] TextMeshProUGUI popText;
+    [SerializeField] TextMeshProUGUI moneyText;
 
     void Awake()
     {
         Instance = this;
+        popText.text = GlobalData.population.ToString();
+        moneyText.text = GlobalData.money.ToString();
     }
 
     void Start()
@@ -58,5 +63,11 @@ public class UiController : MonoBehaviour
     {
         HideAll();
         shop.SetActive(true);
+    }
+
+    private void Update()
+    {
+        popText.text = GlobalData.population.ToString();
+        moneyText.text = GlobalData.money.ToString();
     }
 }

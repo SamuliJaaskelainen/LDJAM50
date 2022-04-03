@@ -53,7 +53,7 @@ MonoBehaviour:
   synergies: []
   baseMoney: 0
   basePopulation: 0
-  baseFaith: 0
+  baseFaith: 1
 --- !u!33 &9003791941062541833
 MeshFilter:
   m_ObjectHideFlags: 0

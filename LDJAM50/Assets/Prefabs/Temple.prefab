@@ -150,7 +150,7 @@ MonoBehaviour:
   synergies: []
   baseMoney: 0
   basePopulation: 0
-  baseFaith: 0
+  baseFaith: 3
 --- !u!135 &8951297831265311782
 SphereCollider:
   m_ObjectHideFlags: 0
