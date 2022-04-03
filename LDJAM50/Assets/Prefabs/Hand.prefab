@@ -194,19 +194,25 @@ MonoBehaviour:
     - prefabToSpawn: {fileID: 313339576241506123, guid: 7651148fd7fe6af4586b04a4543c6fa9,
         type: 3}
       number: 0
-    price: 0
-    setName: Keep the mansion
-    setDescription: This is the description
+    - prefabToSpawn: {fileID: 8663934055517150627, guid: 10866775e6d9cdd4cbf0e462e88ac408,
+        type: 3}
+      number: 0
+    price: 200
+    setName: Power fantasies
+    setDescription: Leadership and broad shoulders to build on.
   - cards:
     - prefabToSpawn: {fileID: 1910063633410339824, guid: 5cfa70bf4fae2f845bbdd39947b555af,
         type: 3}
       number: 0
-    - prefabToSpawn: {fileID: 4978016310013176813, guid: afaba2d55e2052c4aae1edd07abbe5d1,
+    - prefabToSpawn: {fileID: 7322123193864878799, guid: 4fee15fb1afa09f4c89e631468911357,
         type: 3}
       number: 0
-    price: 10
-    setName: Mill the apertment
-    setDescription: Has things in it
+    - prefabToSpawn: {fileID: 4618421803460695830, guid: f75738e42e52c4b4d83ce7532b9fda04,
+        type: 3}
+      number: 0
+    price: 50
+    setName: Pretty Rural
+    setDescription: When some peace and quite is needed.
   - cards:
     - prefabToSpawn: {fileID: 7081898761882237075, guid: a3575b9eeb98971418044e72e7e65a44,
         type: 3}
@@ -214,9 +220,9 @@ MonoBehaviour:
     - prefabToSpawn: {fileID: 8781552269768396170, guid: d4923376d2e2dfb4a9c1fc297e3fa8ac,
         type: 3}
       number: 0
-    price: 20
+    price: 15
     setName: Green and house
-    setDescription: Very eco friendly
+    setDescription: Might also work with submarine agriculture efforts..?
   - cards:
     - prefabToSpawn: {fileID: 9100706080293014004, guid: fb88b85e74835864485ec5cc59312a0f,
         type: 3}
@@ -230,9 +236,143 @@ MonoBehaviour:
     - prefabToSpawn: {fileID: 7322123193864878799, guid: 4fee15fb1afa09f4c89e631468911357,
         type: 3}
       number: 0
-    price: 999
-    setName: Massikeisarin unelma
-    setDescription: Pricy trees for you
+    - prefabToSpawn: {fileID: 4618421803460695830, guid: f75738e42e52c4b4d83ce7532b9fda04,
+        type: 3}
+      number: 0
+    price: 10
+    setName: Time to park
+    setDescription: Greenery and harmony brings the best out of people
+  - cards:
+    - prefabToSpawn: {fileID: 8140269668574568819, guid: ddcfb7552a803d146b3a5e872cc5d43e,
+        type: 3}
+      number: 0
+    - prefabToSpawn: {fileID: 4618421803460695830, guid: f75738e42e52c4b4d83ce7532b9fda04,
+        type: 3}
+      number: 0
+    - prefabToSpawn: {fileID: 9100706080293014004, guid: fb88b85e74835864485ec5cc59312a0f,
+        type: 3}
+      number: 0
+    - prefabToSpawn: {fileID: 8663934055517150627, guid: 10866775e6d9cdd4cbf0e462e88ac408,
+        type: 3}
+      number: 0
+    price: 150
+    setName: Miraculous
+    setDescription: Well, worth the try at least?
+  - cards:
+    - prefabToSpawn: {fileID: 8399097934059941140, guid: c625fdf94f2a8dc4badb9088060fc6d3,
+        type: 3}
+      number: 0
+    - prefabToSpawn: {fileID: 7322123193864878799, guid: 4fee15fb1afa09f4c89e631468911357,
+        type: 3}
+      number: 0
+    - prefabToSpawn: {fileID: 7322123193864878799, guid: 4fee15fb1afa09f4c89e631468911357,
+        type: 3}
+      number: 0
+    - prefabToSpawn: {fileID: 7322123193864878799, guid: 4fee15fb1afa09f4c89e631468911357,
+        type: 3}
+      number: 0
+    - prefabToSpawn: {fileID: 5020840687663118144, guid: 657d13df32bf53f49a7917e866622fe1,
+        type: 3}
+      number: 0
+    price: 150
+    setName: Holy flock
+    setDescription: Religious leader and their flock
+  - cards:
+    - prefabToSpawn: {fileID: 4978016310013176813, guid: afaba2d55e2052c4aae1edd07abbe5d1,
+        type: 3}
+      number: 0
+    - prefabToSpawn: {fileID: 5020840687663118144, guid: 657d13df32bf53f49a7917e866622fe1,
+        type: 3}
+      number: 0
+    - prefabToSpawn: {fileID: 8781552269768396170, guid: d4923376d2e2dfb4a9c1fc297e3fa8ac,
+        type: 3}
+      number: 0
+    - prefabToSpawn: {fileID: 7322123193864878799, guid: 4fee15fb1afa09f4c89e631468911357,
+        type: 3}
+      number: 0
+    price: 25
+    setName: For the people
+    setDescription: The populace demands housing
+  - cards:
+    - prefabToSpawn: {fileID: 4978016310013176813, guid: afaba2d55e2052c4aae1edd07abbe5d1,
+        type: 3}
+      number: 0
+    - prefabToSpawn: {fileID: 4978016310013176813, guid: afaba2d55e2052c4aae1edd07abbe5d1,
+        type: 3}
+      number: 0
+    - prefabToSpawn: {fileID: 9100706080293014004, guid: fb88b85e74835864485ec5cc59312a0f,
+        type: 3}
+      number: 0
+    - prefabToSpawn: {fileID: 8781552269768396170, guid: d4923376d2e2dfb4a9c1fc297e3fa8ac,
+        type: 3}
+      number: 0
+    price: 30
+    setName: Population density
+    setDescription: Have the right people in the right places.
+  - cards:
+    - prefabToSpawn: {fileID: 7081898761882237075, guid: a3575b9eeb98971418044e72e7e65a44,
+        type: 3}
+      number: 0
+    - prefabToSpawn: {fileID: 3812250335504214903, guid: d842c5651a1071f4082bca57ae547112,
+        type: 3}
+      number: 0
+    - prefabToSpawn: {fileID: 647628065627256395, guid: 0907d012a1a70ad43a019bcd7bd8b4f5,
+        type: 3}
+      number: 0
+    price: 15
+    setName: Local Food
+    setDescription: Something for everyone
+  - cards:
+    - prefabToSpawn: {fileID: 5020840687663118144, guid: 657d13df32bf53f49a7917e866622fe1,
+        type: 3}
+      number: 0
+    - prefabToSpawn: {fileID: 5020840687663118144, guid: 657d13df32bf53f49a7917e866622fe1,
+        type: 3}
+      number: 0
+    - prefabToSpawn: {fileID: 7413758458260466775, guid: 49e759e89f4f9be45b233589bef182ce,
+        type: 3}
+      number: 0
+    - prefabToSpawn: {fileID: 8140269668574568819, guid: ddcfb7552a803d146b3a5e872cc5d43e,
+        type: 3}
+      number: 0
+    price: 80
+    setName: Middle management
+    setDescription: Someone needs to take this message to the next guy
+  - cards:
+    - prefabToSpawn: {fileID: 485709065878808632, guid: 299447bf04bd05a4aba4e4bb4e527788,
+        type: 3}
+      number: 0
+    - prefabToSpawn: {fileID: 485709065878808632, guid: 299447bf04bd05a4aba4e4bb4e527788,
+        type: 3}
+      number: 0
+    - prefabToSpawn: {fileID: 485709065878808632, guid: 299447bf04bd05a4aba4e4bb4e527788,
+        type: 3}
+      number: 0
+    - prefabToSpawn: {fileID: 7413758458260466775, guid: 49e759e89f4f9be45b233589bef182ce,
+        type: 3}
+      number: 0
+    price: 15
+    setName: Guide the way
+    setDescription: This will show you the path
+  - cards:
+    - prefabToSpawn: {fileID: 1910063633410339824, guid: 5cfa70bf4fae2f845bbdd39947b555af,
+        type: 3}
+      number: 0
+    - prefabToSpawn: {fileID: 647628065627256395, guid: 0907d012a1a70ad43a019bcd7bd8b4f5,
+        type: 3}
+      number: 0
+    - prefabToSpawn: {fileID: 647628065627256395, guid: 0907d012a1a70ad43a019bcd7bd8b4f5,
+        type: 3}
+      number: 0
+    - prefabToSpawn: {fileID: 647628065627256395, guid: 0907d012a1a70ad43a019bcd7bd8b4f5,
+        type: 3}
+      number: 0
+    - prefabToSpawn: {fileID: 647628065627256395, guid: 0907d012a1a70ad43a019bcd7bd8b4f5,
+        type: 3}
+      number: 0
+    price: 50
+    setName: Conquest of Bread
+    setDescription: Let it grain
   handCam: {fileID: 2539684930756161952}
   cardPrefab: {fileID: 3747776115526019336, guid: ee2909ea8c2e0f84aaaa5a2623e3b45d,
     type: 3}
