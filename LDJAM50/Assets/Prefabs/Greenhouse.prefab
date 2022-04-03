@@ -95,6 +95,7 @@ GameObject:
   - component: {fileID: 5497058589494548618}
   - component: {fileID: 3194640965443983169}
   - component: {fileID: -1584252716932078156}
+  - component: {fileID: -320199020436602690}
   m_Layer: 0
   m_Name: Greenhouse
   m_TagString: Untagged
@@ -165,6 +166,22 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &-320199020436602690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7081898761882237075}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 152c2d7e1bbbbee429d6ff92b9eeda84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clips:
+  - {fileID: 8300000, guid: 37f7a3c27c040514fa70063443b431d2, type: 3}
+  - {fileID: 8300000, guid: 2937aba3e123dbe48b39ae3829426cce, type: 3}
+  - {fileID: 8300000, guid: 270995651b60b0d4dbb9bbe75f8d28d3, type: 3}
 --- !u!1 &7280912376009586598
 GameObject:
   m_ObjectHideFlags: 0

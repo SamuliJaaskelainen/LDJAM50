@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 305611021001952025}
   - component: {fileID: 4128822538050728929}
   - component: {fileID: -6623470477848954911}
+  - component: {fileID: -3227449126502789719}
   m_Layer: 0
   m_Name: Farm
   m_TagString: Untagged
@@ -147,3 +148,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &-3227449126502789719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 647628065627256395}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 152c2d7e1bbbbee429d6ff92b9eeda84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clips:
+  - {fileID: 8300000, guid: 9f2a57890ce976243a2b854e777d7ab5, type: 3}
+  - {fileID: 8300000, guid: 77b36af8fb9ca3a41897e9a822f551bd, type: 3}
+  - {fileID: 8300000, guid: dbcadc09a19018340a04f8bb61b1a98b, type: 3}

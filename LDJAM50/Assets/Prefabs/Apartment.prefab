@@ -208,6 +208,7 @@ GameObject:
   - component: {fileID: 1464917798833145754}
   - component: {fileID: 3223639622593447116}
   - component: {fileID: 5275062383253163076}
+  - component: {fileID: 1206916117524902571}
   m_Layer: 0
   m_Name: Apartment
   m_TagString: Untagged
@@ -279,6 +280,23 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 10
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1206916117524902571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4978016310013176813}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 152c2d7e1bbbbee429d6ff92b9eeda84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clips:
+  - {fileID: 8300000, guid: 80c59db4210465a44bf95123ec0b8897, type: 3}
+  - {fileID: 8300000, guid: 4087027882fe8e647b900e95289739b7, type: 3}
+  - {fileID: 8300000, guid: 2256da7103f760c41980960fa2175c14, type: 3}
+  - {fileID: 8300000, guid: 61e6999e046357f4e9c13b8e8fe2b8e4, type: 3}
 --- !u!1 &6126700897650817741
 GameObject:
   m_ObjectHideFlags: 0

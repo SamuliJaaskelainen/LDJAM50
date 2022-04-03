@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="af7671ff-8049-4dc7-80ba-55c257d6e71a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../Prefabs/Park.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/../Prefabs/Park.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Scripts.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Scripts.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/../../UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
+    <list default="true" id="cd3b18ce-6d18-44e0-be31-4d47787972d7" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../Prefabs/Park.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/../../Prefabs/Park.prefab" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,15 +10,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/../../../../GGJ2022/Assets/Scripts/Ship.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../../../GGJ2022/Assets/Scripts/OnHitSound.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../../../GGJ2022/Assets/Scripts/AudioManager.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/SFXCollider.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../Scripts/SFX_Collision.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../../../GGJ2022/Assets/Scripts/Ship.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../../../GGJ2022/Assets/Scripts/OnHitSound.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../../../GGJ2022/Assets/Scripts/AudioManager.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
-  <component name="MarkdownSettingsMigration">
-    <option name="stateVersion" value="1" />
-  </component>
-  <component name="ProjectId" id="27FIe7IQe0vbCV49wG2Ey0OuspX" />
+  <component name="ProjectId" id="27HJYpDzxYAlBZBC0gB5GTAlAXQ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -35,16 +30,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="af7671ff-8049-4dc7-80ba-55c257d6e71a" name="Changes" comment="" />
-      <created>1648909503183</created>
+      <changelist id="cd3b18ce-6d18-44e0-be31-4d47787972d7" name="Changes" comment="" />
+      <created>1648971130630</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1648909503183</updated>
-      <workItem from="1648909506116" duration="522000" />
-      <workItem from="1648983608095" duration="11000" />
-      <workItem from="1648983661717" duration="784000" />
-      <workItem from="1648984466434" duration="5000" />
-      <workItem from="1648984624989" duration="473000" />
+      <updated>1648971130630</updated>
+      <workItem from="1648971145220" duration="1911000" />
     </task>
     <servers />
   </component>
@@ -52,8 +43,19 @@
     <option name="version" value="3" />
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
-  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="null" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>

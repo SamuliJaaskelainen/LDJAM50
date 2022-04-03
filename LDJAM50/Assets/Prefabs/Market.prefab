@@ -208,6 +208,7 @@ GameObject:
   - component: {fileID: 2880905091381883393}
   - component: {fileID: 7418744764300817377}
   - component: {fileID: 1874296737533459561}
+  - component: {fileID: 8452245995403941142}
   m_Layer: 0
   m_Name: Market
   m_TagString: Untagged
@@ -280,6 +281,23 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 10
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &8452245995403941142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3812250335504214903}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 152c2d7e1bbbbee429d6ff92b9eeda84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clips:
+  - {fileID: 8300000, guid: 1c05f59c060797148936ccbbe641510b, type: 3}
+  - {fileID: 8300000, guid: cbda5e24e3439ae48bc6226839decf67, type: 3}
+  - {fileID: 8300000, guid: aa3198435c1c1e24ab798584c2cdc1dc, type: 3}
+  - {fileID: 8300000, guid: f37153690dcb0334d8b13573240aaf89, type: 3}
 --- !u!1 &4679467802620188214
 GameObject:
   m_ObjectHideFlags: 0

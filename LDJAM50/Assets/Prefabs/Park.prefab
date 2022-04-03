@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 8254352817823118521}
   - component: {fileID: 8254352817823118520}
   - component: {fileID: 674653718454560564}
+  - component: {fileID: 8728041127498643170}
   m_Layer: 0
   m_Name: Park
   m_TagString: Untagged
@@ -167,3 +168,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &8728041127498643170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9100706080293014004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 152c2d7e1bbbbee429d6ff92b9eeda84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clips:
+  - {fileID: 8300000, guid: a7d977145ba32a041a7f6e2c80460184, type: 3}
+  - {fileID: 8300000, guid: 36d67454061f5214cbe5eab7cce35aea, type: 3}
+  - {fileID: 8300000, guid: 94f6d8389bab5e14580a40fa4404ac0d, type: 3}
