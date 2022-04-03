@@ -276,7 +276,7 @@ public class Hand : MonoBehaviour
             if (cards.Count <= 0)
             {
                 GlobalData.rounds++;
-                GlobalData.seaLevel += 1.0f;
+                GlobalData.seaLevel += (1.0f - (GlobalData.faith / 50.0f));
                 GlobalData.faith /= 2;
                 GenerateHandSets();
                 Invoke("ResolveRound", 2.0f);

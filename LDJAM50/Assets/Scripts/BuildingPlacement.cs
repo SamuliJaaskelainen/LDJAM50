@@ -100,16 +100,33 @@ namespace Building
                 Collider[] collisions = Physics.OverlapSphere(transform.position, radius);
                 foreach (Collider col in collisions)
                 {
-                    BuildingPlacement building = GetComponent<BuildingPlacement>();
-                    if (building)
+                    Rigidbody colRb = col.attachedRigidbody;
+                    if (colRb)
                     {
-                        foreach (Synergy synergy in synergies)
+                        BuildingPlacement building = colRb.GetComponent<BuildingPlacement>();
+                        if (building)
                         {
-                            if (synergy.buildingType == building.type)
+                            foreach (Synergy synergy in synergies)
                             {
-                                GlobalData.money += synergy.money;
-                                GlobalData.population += synergy.population;
-                                GlobalData.faith += synergy.faith;
+                                if (synergy.buildingType == building.type)
+                                {
+                                    GlobalData.money += synergy.money;
+                                    GlobalData.population += synergy.population;
+                                    GlobalData.faith += synergy.faith;
+
+                                    if (synergy.money > 0)
+                                    {
+                                        VfxPlayer.Instance.PlayVfx(0, building.transform.position, synergy.money);
+                                    }
+                                    if (synergy.population > 0)
+                                    {
+                                        VfxPlayer.Instance.PlayVfx(1, building.transform.position, synergy.population);
+                                    }
+                                    if (synergy.faith > 0)
+                                    {
+                                        VfxPlayer.Instance.PlayVfx(2, building.transform.position, synergy.faith);
+                                    }
+                                }
                             }
                         }
                     }
@@ -128,6 +145,7 @@ namespace Building
                 {
                     renderer.material = Resources.Load<Material>("AtlasWet");
                 }
+                firstCollision = true;
                 enabled = false;
             }
         }

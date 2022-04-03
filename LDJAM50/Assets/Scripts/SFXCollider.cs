@@ -7,14 +7,20 @@ public class SFXCollider : MonoBehaviour
     public AudioClip[] clips;
     AudioSource audioSource;
 
+    float timer;
+
     void Start()
     {
-        audioSource = gameObject.AddComponent<AudioSource>(); 
-        }
+        audioSource = gameObject.AddComponent<AudioSource>();
+    }
 
     void OnCollisionEnter(Collision other)
     {
-        audioSource.clip = clips[Random.Range(0, clips.Length)];
-        audioSource.Play();
+        if (timer > Time.time)
+        {
+            timer = Time.time + 0.33f;
+            audioSource.clip = clips[Random.Range(0, clips.Length)];
+            audioSource.Play();
+        }
     }
 }
