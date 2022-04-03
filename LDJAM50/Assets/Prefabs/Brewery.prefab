@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 3248086630454262283}
   - component: {fileID: 3248086630454262284}
   - component: {fileID: -1762415190230366990}
+  - component: {fileID: 3290449664304227577}
   m_Layer: 0
   m_Name: Brewery
   m_TagString: Untagged
@@ -147,3 +148,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &3290449664304227577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8663934055517150627}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 152c2d7e1bbbbee429d6ff92b9eeda84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clips:
+  - {fileID: 8300000, guid: 164038ea241b32541a1a0a776bb68aa4, type: 3}
+  - {fileID: 8300000, guid: bdc7ba109eba4db4b90d7672f4e529b4, type: 3}
+  - {fileID: 8300000, guid: 27d81471c3bd6ce4883506a0a71bf0e5, type: 3}
+  - {fileID: 8300000, guid: 48b6d3b8d71519a40ba22e99dbac3d6d, type: 3}

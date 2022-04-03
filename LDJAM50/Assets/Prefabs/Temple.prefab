@@ -110,6 +110,7 @@ GameObject:
   - component: {fileID: 8951297831265311781}
   - component: {fileID: 8951297831265311782}
   - component: {fileID: -8472344760522767914}
+  - component: {fileID: -2782727905260550035}
   m_Layer: 0
   m_Name: Temple
   m_TagString: Untagged
@@ -180,6 +181,23 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &-2782727905260550035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8140269668574568819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 152c2d7e1bbbbee429d6ff92b9eeda84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clips:
+  - {fileID: 8300000, guid: 269f3e37c1778f84289b24b0ca3fd0a2, type: 3}
+  - {fileID: 8300000, guid: adfd20e150179094981498638f9d2ed4, type: 3}
+  - {fileID: 8300000, guid: 534210e236e79924a8632e27bba32d59, type: 3}
+  - {fileID: 8300000, guid: c7dc55c393d587e4aa9374f4baf967b5, type: 3}
 --- !u!1 &8625807806291324486
 GameObject:
   m_ObjectHideFlags: 0

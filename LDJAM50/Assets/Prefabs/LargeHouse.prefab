@@ -208,6 +208,7 @@ GameObject:
   - component: {fileID: -1288265120504177376}
   - component: {fileID: 1555361842718763634}
   - component: {fileID: 7827816880646560851}
+  - component: {fileID: 9084306799121706662}
   m_Layer: 0
   m_Name: LargeHouse
   m_TagString: Untagged
@@ -279,6 +280,23 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 10
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &9084306799121706662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5020840687663118144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 152c2d7e1bbbbee429d6ff92b9eeda84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clips:
+  - {fileID: 8300000, guid: 164038ea241b32541a1a0a776bb68aa4, type: 3}
+  - {fileID: 8300000, guid: bdc7ba109eba4db4b90d7672f4e529b4, type: 3}
+  - {fileID: 8300000, guid: 27d81471c3bd6ce4883506a0a71bf0e5, type: 3}
+  - {fileID: 8300000, guid: 48b6d3b8d71519a40ba22e99dbac3d6d, type: 3}
 --- !u!1 &6178518074285123168
 GameObject:
   m_ObjectHideFlags: 0

@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 1074819267226163998}
   - component: {fileID: 6963212426761666339}
   - component: {fileID: 6552214092218191878}
+  - component: {fileID: -3316361346693505617}
   m_Layer: 0
   m_Name: Lighthouse
   m_TagString: Untagged
@@ -147,3 +148,20 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -5495902117074765545, guid: 7636b1ac472c4ca40a5bb93be8c6c645, type: 3}
+--- !u!114 &-3316361346693505617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7413758458260466775}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 152c2d7e1bbbbee429d6ff92b9eeda84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clips:
+  - {fileID: 8300000, guid: 269f3e37c1778f84289b24b0ca3fd0a2, type: 3}
+  - {fileID: 8300000, guid: adfd20e150179094981498638f9d2ed4, type: 3}
+  - {fileID: 8300000, guid: 534210e236e79924a8632e27bba32d59, type: 3}
+  - {fileID: 8300000, guid: c7dc55c393d587e4aa9374f4baf967b5, type: 3}
