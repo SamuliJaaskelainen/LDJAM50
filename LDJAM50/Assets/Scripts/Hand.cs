@@ -180,7 +180,7 @@ public class Hand : MonoBehaviour
             break;
 
         case "Cathedral":
-        	switch (Random.Range(0, 5))
+        	switch (Random.Range(0, 6))
 				{
 					case 0:
 						AudioManager.Instance.PlaySound("ChantKarjala_01");
@@ -199,6 +199,9 @@ public class Hand : MonoBehaviour
  	               		break;
    	        		case 5:
 	               		AudioManager.Instance.PlaySound("ChantSaatana_01");
+	                	break;
+ 	        		case 6:
+	               		AudioManager.Instance.PlaySound("ChantPerkele_01");
 	                	break;
 	        	}
 			break;
