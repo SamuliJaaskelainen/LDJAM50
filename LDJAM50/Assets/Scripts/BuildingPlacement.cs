@@ -26,6 +26,16 @@ namespace Building
     }
 
     [System.Serializable]
+    public class BuildingData
+    {
+        public BuildingType buildingType;
+        public int money;
+        public int population;
+        public int faith;
+        public List<Synergy> synergies = new List<Synergy>();
+    }
+
+    [System.Serializable]
     public class Synergy
     {
         public BuildingType buildingType;
@@ -36,9 +46,9 @@ namespace Building
 
     public class BuildingPlacement : MonoBehaviour
     {
+        [SerializeField] string jsonFileName;
         [SerializeField] BuildingType type;
         [SerializeField] List<Synergy> synergies = new List<Synergy>();
-
         [SerializeField] int baseMoney;
         [SerializeField] int basePopulation;
         [SerializeField] int baseFaith;
@@ -53,6 +63,17 @@ namespace Building
             radius = sphereCollider.radius;
             rb = GetComponent<Rigidbody>();
             Destroy(sphereCollider);
+
+            TextAsset jsonData = Resources.Load<TextAsset>(jsonFileName);
+            if (jsonData)
+            {
+                BuildingData buildingData = JsonUtility.FromJson<BuildingData>(jsonData.text);
+                type = buildingData.buildingType;
+                baseMoney = buildingData.money;
+                basePopulation = buildingData.population;
+                baseFaith = buildingData.faith;
+                synergies = buildingData.synergies;
+            }
         }
 
         void OnCollisionEnter(Collision other)
