@@ -85,7 +85,7 @@ MonoBehaviour:
     money: 5
     population: 0
     faith: 0
-  baseMoney: 1
+  baseMoney: 5
   basePopulation: 0
   baseFaith: 0
 --- !u!33 &4803151467481734379
