@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 5998859147309393459}
   - component: {fileID: 2886184138243016659}
   - component: {fileID: -4776499473030163802}
+  - component: {fileID: -3568221916699197511}
   m_Layer: 0
   m_Name: Wall
   m_TagString: Untagged
@@ -50,6 +51,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81373ecef61a187459368fac980caa60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  jsonFileName: 
   type: 16
   synergies: []
   baseMoney: 0
@@ -165,3 +167,20 @@ MonoBehaviour:
   - {fileID: 8300000, guid: a21ca984b56cb794fbad35d85755f84b, type: 3}
   - {fileID: 8300000, guid: b956628439029b74e897815390473682, type: 3}
   - {fileID: 8300000, guid: e0918b7b57dfffd48b4850fbaae53e1e, type: 3}
+--- !u!114 &-3568221916699197511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 485709065878808632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 792a262789b3c4548bd42dcb61dd0107, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clips:
+  - {fileID: 8300000, guid: da1e4095b684ef5449e1e0861d8f5123, type: 3}
+  - {fileID: 8300000, guid: 4acee84bc27690b4a811e0b9be74425b, type: 3}
+  - {fileID: 8300000, guid: d75b3dcc4ba1fc4419b5889100c4d111, type: 3}
+  - {fileID: 8300000, guid: a9e274eeb7f15a54babea26961ce76e5, type: 3}

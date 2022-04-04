@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="af7671ff-8049-4dc7-80ba-55c257d6e71a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/SFXCollider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SFXCollider.cs" afterDir="false" />
-    </list>
+    <list default="true" id="af7671ff-8049-4dc7-80ba-55c257d6e71a" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,6 +16,7 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/WaterCollider.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/SeaLevelListener.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Sea.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../GGJ2022/Assets/Scripts/Ship.cs" root0="SKIP_HIGHLIGHTING" />
@@ -63,7 +62,7 @@
       <workItem from="1648999527661" duration="2000" />
       <workItem from="1648999773088" duration="10542000" />
       <workItem from="1649012299055" duration="5641000" />
-      <workItem from="1649068012482" duration="297000" />
+      <workItem from="1649068012482" duration="912000" />
     </task>
     <servers />
   </component>

@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 6963212426761666339}
   - component: {fileID: 6552214092218191878}
   - component: {fileID: -3316361346693505617}
+  - component: {fileID: -2488304266874942306}
   m_Layer: 0
   m_Name: Lighthouse
   m_TagString: Untagged
@@ -50,6 +51,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81373ecef61a187459368fac980caa60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  jsonFileName: 
   type: 15
   synergies: []
   baseMoney: 0
@@ -165,3 +167,20 @@ MonoBehaviour:
   - {fileID: 8300000, guid: adfd20e150179094981498638f9d2ed4, type: 3}
   - {fileID: 8300000, guid: 534210e236e79924a8632e27bba32d59, type: 3}
   - {fileID: 8300000, guid: c7dc55c393d587e4aa9374f4baf967b5, type: 3}
+--- !u!114 &-2488304266874942306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7413758458260466775}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 792a262789b3c4548bd42dcb61dd0107, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clips:
+  - {fileID: 8300000, guid: 0f47bd68a81c19f40afee52e1b525bf9, type: 3}
+  - {fileID: 8300000, guid: b94a8334b5358da45848b96c1471b34f, type: 3}
+  - {fileID: 8300000, guid: 14238dd0440fd7742b4c4cf442ae1045, type: 3}
+  - {fileID: 8300000, guid: 32e39a46d850038418d147ddd6e00dd0, type: 3}

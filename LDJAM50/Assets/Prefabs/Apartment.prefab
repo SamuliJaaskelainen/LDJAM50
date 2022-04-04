@@ -209,6 +209,7 @@ GameObject:
   - component: {fileID: 3223639622593447116}
   - component: {fileID: 5275062383253163076}
   - component: {fileID: 1206916117524902571}
+  - component: {fileID: -2513262042076263800}
   m_Layer: 0
   m_Name: Apartment
   m_TagString: Untagged
@@ -318,6 +319,23 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 4087027882fe8e647b900e95289739b7, type: 3}
   - {fileID: 8300000, guid: 2256da7103f760c41980960fa2175c14, type: 3}
   - {fileID: 8300000, guid: 61e6999e046357f4e9c13b8e8fe2b8e4, type: 3}
+--- !u!114 &-2513262042076263800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4978016310013176813}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 792a262789b3c4548bd42dcb61dd0107, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clips:
+  - {fileID: 8300000, guid: c9c81514c6aab4244b5e719651b5639b, type: 3}
+  - {fileID: 8300000, guid: 29804c97852917b41a22bcd76b82751b, type: 3}
+  - {fileID: 8300000, guid: 3b1c9fcd490ab6e42aefc61b64efaeab, type: 3}
+  - {fileID: 8300000, guid: 09f704b5c7a08a243847cb2eeda64fbd, type: 3}
 --- !u!1 &6126700897650817741
 GameObject:
   m_ObjectHideFlags: 0

@@ -1163,6 +1163,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Water
       objectReference: {fileID: 0}
+    - target: {fileID: 5703788112207801484, guid: 4071ef102243aaf4b862d99382b5f3d9,
+        type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5703788112207801484, guid: 4071ef102243aaf4b862d99382b5f3d9,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5703788112207801484, guid: 4071ef102243aaf4b862d99382b5f3d9,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5703788112207801487, guid: 4071ef102243aaf4b862d99382b5f3d9,
         type: 3}
       propertyPath: m_RootOrder
