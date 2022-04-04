@@ -1,4 +1,4 @@
-    using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -15,5 +15,7 @@ public class GlobalData : MonoBehaviour
         seaLevel = 0.0f;
         population = 0;
         money = 100;
+        faith = 0;
+        rounds = 0;
     }
 }
