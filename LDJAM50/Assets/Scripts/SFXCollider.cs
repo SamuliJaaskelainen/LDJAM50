@@ -16,11 +16,13 @@ public class SFXCollider : MonoBehaviour
 
     void OnCollisionEnter(Collision other)
     {
-        if (timer > Time.time)
+        if (timer < Time.time)
         {
             timer = Time.time + 0.33f;
             audioSource.clip = clips[Random.Range(0, clips.Length)];
             audioSource.Play();
         }
+		Debug.Log("Timer: " + timer);
+		Debug.Log("Time: " + Time.time);
     }
 }
