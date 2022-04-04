@@ -308,7 +308,7 @@ public class Hand : MonoBehaviour
                 break;
 
             case "Shrine":
-                switch (Random.Range(0, 3))
+                switch (Random.Range(0, 4))
                 {
                     case 0:
                         AudioManager.Instance.PlaySound("Select_Shrine1");
@@ -319,59 +319,68 @@ public class Hand : MonoBehaviour
                     case 2:
                         AudioManager.Instance.PlaySound("Select_Shrine3");
                         break;
+                    case 3:
+                        AudioManager.Instance.PlaySound("Select_Shrine4");
+                        break;
                 }
                 break;
 
             case "Temple":
-                switch (Random.Range(0, 7))
+                switch (Random.Range(0, 8))
                 {
                     case 0:
-                        AudioManager.Instance.PlaySound("ChantKarjala_02");
+                        AudioManager.Instance.PlaySound("Select_Temple01_Omena");
                         break;
                     case 1:
-                        AudioManager.Instance.PlaySound("ChantOmena_02");
+                        AudioManager.Instance.PlaySound("Select_Temple02_Peruna");
                         break;
                     case 2:
-                        AudioManager.Instance.PlaySound("ChantPeruna_02");
+                        AudioManager.Instance.PlaySound("Select_Temple03_Porkkana");
                         break;
                     case 3:
-                        AudioManager.Instance.PlaySound("ChantPiirakka_02");
+                        AudioManager.Instance.PlaySound("Select_Temple04_Piirakka");
                         break;
                     case 4:
-                        AudioManager.Instance.PlaySound("ChantPorkkana_02");
+                        AudioManager.Instance.PlaySound("Select_Temple05_Karjala");
                         break;
                     case 5:
-                        AudioManager.Instance.PlaySound("ChantSaatana_02");
+                        AudioManager.Instance.PlaySound("Select_Temple06_Kalkkuna");
                         break;
                     case 6:
-                        AudioManager.Instance.PlaySound("ChantPerkele_02");
+                        AudioManager.Instance.PlaySound("Select_Temple07_Rucola");
+                        break;
+					case 7:
+                        AudioManager.Instance.PlaySound("Select_Temple08_Krapula");
                         break;
                 }
                 break;
 
             case "Cathedral":
-                switch (Random.Range(0, 7))
+                switch (Random.Range(0, 8))
                 {
                     case 0:
-                        AudioManager.Instance.PlaySound("ChantKarjala_01");
+                        AudioManager.Instance.PlaySound("Select_Cathedral01_Omena");
                         break;
                     case 1:
-                        AudioManager.Instance.PlaySound("ChantOmena_01");
+                        AudioManager.Instance.PlaySound("Select_Cathedral02_Peruna");
                         break;
                     case 2:
-                        AudioManager.Instance.PlaySound("ChantPeruna_01");
+                        AudioManager.Instance.PlaySound("Select_Cathedral03_Porkkana");
                         break;
                     case 3:
-                        AudioManager.Instance.PlaySound("ChantPiirakka_01");
+                        AudioManager.Instance.PlaySound("Select_Cathedral04_Piirakka");
                         break;
                     case 4:
-                        AudioManager.Instance.PlaySound("ChantPorkkana_01");
+                        AudioManager.Instance.PlaySound("Select_Cathedral05_Karjala");
                         break;
                     case 5:
-                        AudioManager.Instance.PlaySound("ChantSaatana_01");
+                        AudioManager.Instance.PlaySound("Select_Cathedral06_Kalkkuna");
                         break;
                     case 6:
-                        AudioManager.Instance.PlaySound("ChantPerkele_01");
+                        AudioManager.Instance.PlaySound("Select_Cathedral07_Rucola");
+                        break;
+					case 7:
+                        AudioManager.Instance.PlaySound("Select_Cathedral08_Krapula");
                         break;
                 }
                 break;
