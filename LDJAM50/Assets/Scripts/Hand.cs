@@ -27,7 +27,8 @@ public class Hand : MonoBehaviour
     [SerializeField] GameObject cardPrefab;
     [SerializeField] Transform cardParent;
     [SerializeField] LayerMask cardLayers;
-    [SerializeField] int freeMoney = 10;
+    [SerializeField] int freeMoney = 50;
+    [SerializeField] int freeMoneyMore = 100;
     [SerializeField] List<Card> freeCards = new List<Card>();
     [SerializeField] List<Card> randomAddCards = new List<Card>();
     [SerializeField] List<GameObject> cardSetUI = new List<GameObject>();
@@ -111,7 +112,7 @@ public class Hand : MonoBehaviour
 
     public void SelectCard(int number)
     {
-        if (selectedCard == number)
+        if (selectedCard == number || number > cards.Count)
         {
             UnselectCard();
         }
@@ -349,7 +350,7 @@ public class Hand : MonoBehaviour
                     case 6:
                         AudioManager.Instance.PlaySound("Select_Temple07_Rucola");
                         break;
-					case 7:
+                    case 7:
                         AudioManager.Instance.PlaySound("Select_Temple08_Krapula");
                         break;
                 }
@@ -379,7 +380,7 @@ public class Hand : MonoBehaviour
                     case 6:
                         AudioManager.Instance.PlaySound("Select_Cathedral07_Rucola");
                         break;
-					case 7:
+                    case 7:
                         AudioManager.Instance.PlaySound("Select_Cathedral08_Krapula");
                         break;
                 }
@@ -414,13 +415,7 @@ public class Hand : MonoBehaviour
             cards.RemoveAt(selectedCard);
             if (cards.Count <= 0)
             {
-                GlobalData.rounds++;
-                Debug.Log("Round " + GlobalData.rounds + ": " + "Faith: " + GlobalData.faith + ", Sea level: " + GlobalData.seaLevel);
-                GlobalData.seaLevel += Mathf.Max(1.0f - (GlobalData.faith / 50.0f), 0.25f) + (GlobalData.rounds * 0.1f);
-                GlobalData.faith /= 2;
-                GenerateHandSets();
-                Invoke("ResolveRound", GlobalData.population > 0 ? 2.0f : 6.0f);
-                HideHand();
+                EndOfRound();
             }
             else
             {
@@ -431,6 +426,17 @@ public class Hand : MonoBehaviour
             }
         }
         UnselectCard();
+    }
+
+    void EndOfRound()
+    {
+        GlobalData.rounds++;
+        Debug.Log("Round " + GlobalData.rounds + ": " + "Faith: " + GlobalData.faith + ", Sea level: " + GlobalData.seaLevel);
+        GlobalData.seaLevel += Mathf.Max(1.0f - (GlobalData.faith / 50.0f), 0.25f) + (GlobalData.rounds * 0.1f);
+        GlobalData.faith /= 2;
+        GenerateHandSets();
+        Invoke("ResolveRound", GlobalData.population > 0 ? 2.0f : 6.0f);
+        HideHand();
     }
 
     void ResolveRound()
@@ -522,5 +528,12 @@ public class Hand : MonoBehaviour
         SetCards(freeCards);
         UiController.Instance.ShowGamePlayUI();
         ShowHand();
+    }
+
+    public void SkipHand()
+    {
+        GlobalData.money += freeMoneyMore;
+        EndOfRound();
+        UiController.Instance.ShowGamePlayUI();
     }
 }

@@ -56,6 +56,7 @@ namespace Building
         Rigidbody rb;
         float radius;
         bool firstCollision = true;
+        bool peopleSpawned = false;
 
         void Awake()
         {
@@ -83,6 +84,7 @@ namespace Building
                 GlobalData.money += baseMoney;
                 GlobalData.population += basePopulation;
                 GlobalData.faith += baseFaith;
+                peopleSpawned = true;
 
                 if (baseMoney > 0)
                 {
@@ -142,7 +144,7 @@ namespace Building
         {
             if (rb.centerOfMass.y + transform.position.y < GlobalData.seaLevel)
             {
-                if (firstCollision)
+                if (peopleSpawned)
                 {
                     GlobalData.population -= basePopulation;
                 }

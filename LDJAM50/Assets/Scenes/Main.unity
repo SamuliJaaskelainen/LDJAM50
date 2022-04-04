@@ -371,26 +371,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 342619132900654271, guid: 68242e9c4159540eda0890d7d4d4ec2f,
+    - target: {fileID: 140846392241654392, guid: 68242e9c4159540eda0890d7d4d4ec2f,
         type: 3}
-      propertyPath: m_Color.a
-      value: 0.16470589
-      objectReference: {fileID: 0}
-    - target: {fileID: 342619132900654271, guid: 68242e9c4159540eda0890d7d4d4ec2f,
-        type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 342619132900654271, guid: 68242e9c4159540eda0890d7d4d4ec2f,
-        type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 342619132900654271, guid: 68242e9c4159540eda0890d7d4d4ec2f,
-        type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 587039400}
     - target: {fileID: 3629170407530586584, guid: 68242e9c4159540eda0890d7d4d4ec2f,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target

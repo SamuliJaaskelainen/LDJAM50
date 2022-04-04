@@ -368,7 +368,8 @@ MonoBehaviour:
   cardLayers:
     serializedVersion: 2
     m_Bits: 64
-  freeMoney: 100
+  freeMoney: 50
+  freeMoneyMore: 100
   freeCards:
   - prefabToSpawn: {fileID: 7322123193864878799, guid: 4fee15fb1afa09f4c89e631468911357,
       type: 3}
