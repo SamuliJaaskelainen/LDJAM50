@@ -826,12 +826,12 @@ GameObject:
   - component: {fileID: 1549479791}
   - component: {fileID: 1549479790}
   m_Layer: 5
-  m_Name: InfoText
+  m_Name: RoundsText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1549479789
 RectTransform:
   m_ObjectHideFlags: 0
@@ -880,7 +880,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 2 additional random buildings are always included
+  m_text: You have survived x rounds
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6da8b084065b84b11bfce11a66f47113, type: 2}
   m_sharedMaterial: {fileID: 6767362759339702426, guid: 6da8b084065b84b11bfce11a66f47113,
@@ -1805,7 +1805,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -424, y: -7.201599}
+  m_AnchoredPosition: {x: -424, y: -7.201538}
   m_SizeDelta: {x: -1385.4775, y: -820.98}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6293985836737481721
@@ -6985,6 +6985,7 @@ MonoBehaviour:
   mainMenu: {fileID: 8196956551682737800}
   gameOver: {fileID: 4977926670801635353}
   settings: {fileID: 6494640681823901624}
+  roundsSurvivedInShop: {fileID: 1549479790}
   shop: {fileID: 8079711416542933128}
   stats: {fileID: 3981818373275694562}
   popText: {fileID: 8296535436382888090}
