@@ -21,7 +21,7 @@ public class Player : MonoBehaviour
     [SerializeField] float orbitSpeedMouse = 10.0f;
     [SerializeField] float orbitSpeedKeys = 10.0f;
     [SerializeField] float rotateCursorMultiplier = 10.0f;
-    float zoomLevel = 0.0f;
+    public float zoomLevel = 0.0f;
     RaycastHit hit;
     Vector3 lastMousePos;
     bool wasCardSelected;
@@ -94,5 +94,6 @@ public class Player : MonoBehaviour
         }
         cursor.gameObject.SetActive(Hand.Instance.IsCardSelected());
         wasCardSelected = Hand.Instance.IsCardSelected();
+        GetComponent<AudioSource>().volume = zoomLevel;
     }
 }

@@ -326,6 +326,24 @@ public class Hand : MonoBehaviour
                 }
                 break;
 
+            case "Mill":
+                switch (Random.Range(0, 4))
+                {
+                    case 0:
+                        AudioManager.Instance.PlaySound("Select_Mill1");
+                        break;
+                    case 1:
+                        AudioManager.Instance.PlaySound("Select_Mill2");
+                        break;
+                    case 2:
+                        AudioManager.Instance.PlaySound("Select_Mill3");
+                        break;
+                    case 3:
+                        AudioManager.Instance.PlaySound("Select_Mill4");
+                        break;
+                }
+                break;
+
             case "Temple":
                 switch (Random.Range(0, 8))
                 {
