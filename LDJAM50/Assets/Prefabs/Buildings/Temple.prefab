@@ -151,25 +151,41 @@ MonoBehaviour:
   jsonFileName: 
   type: 12
   synergies:
+  - buildingType: 13
+    money: 0
+    population: 0
+    faith: 1
+  - buildingType: 11
+    money: 0
+    population: 0
+    faith: 6
+  - buildingType: 0
+    money: 0
+    population: 0
+    faith: 2
   - buildingType: 1
-    money: 1
+    money: 0
     population: 0
-    faith: 1
+    faith: 3
   - buildingType: 2
-    money: 5
+    money: 0
     population: 0
-    faith: 1
+    faith: 3
   - buildingType: 3
-    money: 5
+    money: 0
     population: 0
-    faith: 1
-  - buildingType: 9
-    money: 5
+    faith: 4
+  - buildingType: 4
+    money: 0
     population: 0
-    faith: 1
-  baseMoney: 10
-  basePopulation: 1
-  baseFaith: 3
+    faith: 4
+  - buildingType: 12
+    money: 0
+    population: 0
+    faith: 2
+  baseMoney: 0
+  basePopulation: 0
+  baseFaith: 6
 --- !u!135 &8951297831265311782
 SphereCollider:
   m_ObjectHideFlags: 0

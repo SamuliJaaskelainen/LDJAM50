@@ -142,14 +142,17 @@ namespace Building
         {
             if (rb.centerOfMass.y + transform.position.y < GlobalData.seaLevel)
             {
-                GlobalData.population -= basePopulation;
+                if (firstCollision)
+                {
+                    GlobalData.population -= basePopulation;
+                }
                 MeshRenderer[] renderers = GetComponentsInChildren<MeshRenderer>();
                 foreach (MeshRenderer renderer in renderers)
                 {
                     renderer.material = Resources.Load<Material>("AtlasWet");
                 }
                 transform.SendMessage("Splash", SendMessageOptions.DontRequireReceiver);
-                firstCollision = true;
+                firstCollision = false;
                 enabled = false;
             }
         }

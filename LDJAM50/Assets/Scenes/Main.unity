@@ -596,6 +596,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 342619132900654271, guid: 68242e9c4159540eda0890d7d4d4ec2f,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 0.16470589
+      objectReference: {fileID: 0}
+    - target: {fileID: 342619132900654271, guid: 68242e9c4159540eda0890d7d4d4ec2f,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 342619132900654271, guid: 68242e9c4159540eda0890d7d4d4ec2f,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 342619132900654271, guid: 68242e9c4159540eda0890d7d4d4ec2f,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3629170407530586584, guid: 68242e9c4159540eda0890d7d4d4ec2f,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -970,10 +990,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1283563138, guid: 675112824a4b70f4293a166091e35a9a, type: 3}
-      propertyPath: freeCards.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1283563138, guid: 675112824a4b70f4293a166091e35a9a, type: 3}
       propertyPath: cardSetUI.Array.data[0]
       value: 
       objectReference: {fileID: 129895499}
@@ -985,11 +1001,6 @@ PrefabInstance:
       propertyPath: cardSetUI.Array.data[2]
       value: 
       objectReference: {fileID: 2127933726}
-    - target: {fileID: 1283563138, guid: 675112824a4b70f4293a166091e35a9a, type: 3}
-      propertyPath: freeCards.Array.data[3].prefabToSpawn
-      value: 
-      objectReference: {fileID: 8399097934059941140, guid: c625fdf94f2a8dc4badb9088060fc6d3,
-        type: 3}
     - target: {fileID: 2539684932222829296, guid: 675112824a4b70f4293a166091e35a9a,
         type: 3}
       propertyPath: m_RootOrder

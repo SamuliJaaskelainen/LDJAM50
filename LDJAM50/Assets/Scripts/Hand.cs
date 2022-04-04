@@ -407,10 +407,10 @@ public class Hand : MonoBehaviour
             {
                 GlobalData.rounds++;
                 Debug.Log("Round " + GlobalData.rounds + ": " + "Faith: " + GlobalData.faith + ", Sea level: " + GlobalData.seaLevel);
-                GlobalData.seaLevel += (1.0f - (GlobalData.faith / 50.0f));
+                GlobalData.seaLevel += Mathf.Max(1.0f - (GlobalData.faith / 50.0f), 0.25f) + (GlobalData.rounds * 0.1f);
                 GlobalData.faith /= 2;
                 GenerateHandSets();
-                Invoke("ResolveRound", 2.0f);
+                Invoke("ResolveRound", GlobalData.population > 0 ? 2.0f : 6.0f);
                 HideHand();
             }
             else
@@ -449,9 +449,22 @@ public class Hand : MonoBehaviour
 
     void GenerateHandSets()
     {
-        generatedHandSets[0] = handSets[Random.Range(0, handSets.Count)];
-        generatedHandSets[1] = handSets[Random.Range(0, handSets.Count)];
-        generatedHandSets[2] = handSets[Random.Range(0, handSets.Count)];
+        int r1, r2, r3 = 0;
+        r1 = Random.Range(0, handSets.Count);
+        do
+        {
+            r2 = Random.Range(0, handSets.Count);
+        }
+        while (r2 == r1);
+        do
+        {
+            r3 = Random.Range(0, handSets.Count);
+        }
+        while (r3 == r2 || r3 == r1);
+
+        generatedHandSets[0] = handSets[r1];
+        generatedHandSets[1] = handSets[r2];
+        generatedHandSets[2] = handSets[r3];
 
         for (int i = 0; i < 3; ++i)
         {

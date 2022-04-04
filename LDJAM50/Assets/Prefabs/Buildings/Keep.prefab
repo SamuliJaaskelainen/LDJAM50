@@ -153,26 +153,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   jsonFileName: 
   type: 14
-  synergies:
-  - buildingType: 3
-    money: 10
-    population: 0
-    faith: 2
-  - buildingType: 6
-    money: 5
-    population: 0
-    faith: 0
-  - buildingType: 9
-    money: 5
-    population: 0
-    faith: 0
-  - buildingType: 16
-    money: 1
-    population: 0
-    faith: 1
-  baseMoney: 100
-  basePopulation: 10
-  baseFaith: 1
+  synergies: []
+  baseMoney: 0
+  basePopulation: 0
+  baseFaith: 0
 --- !u!54 &4987462557257649179
 Rigidbody:
   m_ObjectHideFlags: 0

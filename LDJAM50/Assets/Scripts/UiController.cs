@@ -18,6 +18,7 @@ public class UiController : MonoBehaviour
     [SerializeField] GameObject stats;
     [SerializeField] TextMeshProUGUI popText;
     [SerializeField] TextMeshProUGUI moneyText;
+    [SerializeField] TextMeshProUGUI faithText;
     [SerializeField] Slider quality;
     [SerializeField] UniversalRenderPipelineAsset settingsAsset;
     [SerializeField] TextMeshProUGUI roundsSurvived;
@@ -27,6 +28,7 @@ public class UiController : MonoBehaviour
         Instance = this;
         popText.text = GlobalData.population.ToString();
         moneyText.text = GlobalData.money.ToString();
+        faithText.text = GlobalData.faith.ToString();
     }
 
     void Start()
@@ -36,6 +38,7 @@ public class UiController : MonoBehaviour
 
     public void HideAll()
     {
+        Time.timeScale = 1.0f;
         gamePlay.SetActive(false);
         mainMenu.SetActive(false);
         gameOver.SetActive(false);
@@ -79,12 +82,14 @@ public class UiController : MonoBehaviour
         HideAll();
         shop.SetActive(true);
         stats.SetActive(true);
+        Time.timeScale = 0.0f;
     }
 
     private void Update()
     {
         popText.text = GlobalData.population.ToString();
         moneyText.text = GlobalData.money.ToString();
+        faithText.text = GlobalData.faith.ToString();
 
         if (Input.GetKeyDown(KeyCode.Escape))
         {
