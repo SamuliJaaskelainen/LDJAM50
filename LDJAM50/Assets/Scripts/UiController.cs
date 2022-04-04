@@ -14,6 +14,7 @@ public class UiController : MonoBehaviour
     [SerializeField] GameObject mainMenu;
     [SerializeField] GameObject gameOver;
     [SerializeField] GameObject settings;
+    [SerializeField] TextMeshProUGUI roundsSurvivedInShop;
     [SerializeField] GameObject shop;
     [SerializeField] GameObject stats;
     [SerializeField] TextMeshProUGUI popText;
@@ -80,6 +81,7 @@ public class UiController : MonoBehaviour
     public void ShowShopUI()
     {
         HideAll();
+        roundsSurvivedInShop.text = "You have survived " + GlobalData.rounds + " rounds";
         shop.SetActive(true);
         stats.SetActive(true);
         Time.timeScale = 0.0f;
