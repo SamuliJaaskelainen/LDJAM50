@@ -22,4 +22,13 @@ public class VfxPlayer : MonoBehaviour
         particleSystem.Play();
         Destroy(vfx, particleSystem.main.duration);
     }
+
+    public void PlayVfx(int index, Vector3 pos)
+    {
+        GameObject vfx = Instantiate(vfxs[index], pos, vfxs[index].transform.rotation) as GameObject;
+        ParticleSystem particleSystem = vfx.GetComponent<ParticleSystem>();
+        ParticleSystem.EmissionModule emission = particleSystem.emission;
+        particleSystem.Play();
+        Destroy(vfx, particleSystem.main.duration);
+    }
 }

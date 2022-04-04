@@ -93,7 +93,7 @@ public class Hand : MonoBehaviour
             cards[i].card.prefabToSpawn = newCards[i].prefabToSpawn;
             cards[i].card.number = i;
             cards[i].Init(newCards.Count);
-            Debug.Log("Init card: " + cards[i].card.prefabToSpawn.name);
+            //Debug.Log("Init card: " + cards[i].card.prefabToSpawn.name);
         }
     }
 
@@ -118,7 +118,7 @@ public class Hand : MonoBehaviour
         else
         {
             selectedCard = number;
-            Debug.Log("Selected card: " + cards[selectedCard].card.prefabToSpawn.name);
+            //Debug.Log("Selected card: " + cards[selectedCard].card.prefabToSpawn.name);
             CardSFXLogic(cards[selectedCard].card.prefabToSpawn.name);
         }
     }
@@ -128,7 +128,7 @@ public class Hand : MonoBehaviour
         switch (cardname)
         {
             case "Mansion":
-				switch (Random.Range(0, 4))
+                switch (Random.Range(0, 4))
                 {
                     case 0:
                         AudioManager.Instance.PlaySound("Select_LargeHouse1");
@@ -145,7 +145,7 @@ public class Hand : MonoBehaviour
                 }
                 break;
             case "TallHouse":
-				switch (Random.Range(0, 4))
+                switch (Random.Range(0, 4))
                 {
                     case 0:
                         AudioManager.Instance.PlaySound("Select_MediumHouse1");
@@ -162,7 +162,7 @@ public class Hand : MonoBehaviour
                 }
                 break;
             case "LargeHouse":
-				switch (Random.Range(0, 4))
+                switch (Random.Range(0, 4))
                 {
                     case 0:
                         AudioManager.Instance.PlaySound("Select_MediumHouse1");
@@ -179,7 +179,7 @@ public class Hand : MonoBehaviour
                 }
                 break;
             case "SmallHouse":
-				switch (Random.Range(0, 4))
+                switch (Random.Range(0, 4))
                 {
                     case 0:
                         AudioManager.Instance.PlaySound("Select_SmallHouse1");
@@ -196,7 +196,7 @@ public class Hand : MonoBehaviour
                 }
                 break;
             case "Apartment":
-				switch (Random.Range(0, 4))
+                switch (Random.Range(0, 4))
                 {
                     case 0:
                         AudioManager.Instance.PlaySound("Select_LargeHouse1");
@@ -220,7 +220,7 @@ public class Hand : MonoBehaviour
                 break;
 
             case "Park":
-				switch (Random.Range(0, 4))
+                switch (Random.Range(0, 4))
                 {
                     case 0:
                         AudioManager.Instance.PlaySound("Select_Park1");
@@ -238,7 +238,7 @@ public class Hand : MonoBehaviour
                 break;
 
             case "Greenhouse":
-				switch (Random.Range(0, 4))
+                switch (Random.Range(0, 4))
                 {
                     case 0:
                         AudioManager.Instance.PlaySound("Select_GreenHouse1");
@@ -256,7 +256,7 @@ public class Hand : MonoBehaviour
                 break;
 
             case "Wall":
-				switch (Random.Range(0, 4))
+                switch (Random.Range(0, 4))
                 {
                     case 0:
                         AudioManager.Instance.PlaySound("Select_SmallStone1");
@@ -274,7 +274,7 @@ public class Hand : MonoBehaviour
                 break;
 
             case "Lighthouse":
-				switch (Random.Range(0, 4))
+                switch (Random.Range(0, 4))
                 {
                     case 0:
                         AudioManager.Instance.PlaySound("Select_MediumStone1");
@@ -406,6 +406,7 @@ public class Hand : MonoBehaviour
             if (cards.Count <= 0)
             {
                 GlobalData.rounds++;
+                Debug.Log("Round " + GlobalData.rounds + ": " + "Faith: " + GlobalData.faith + ", Sea level: " + GlobalData.seaLevel);
                 GlobalData.seaLevel += (1.0f - (GlobalData.faith / 50.0f));
                 GlobalData.faith /= 2;
                 GenerateHandSets();

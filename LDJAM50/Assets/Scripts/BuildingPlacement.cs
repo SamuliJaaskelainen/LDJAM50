@@ -106,25 +106,28 @@ namespace Building
                         BuildingPlacement building = colRb.GetComponent<BuildingPlacement>();
                         if (building)
                         {
-                            foreach (Synergy synergy in synergies)
+                            if (building.enabled)
                             {
-                                if (synergy.buildingType == building.type)
+                                foreach (Synergy synergy in synergies)
                                 {
-                                    GlobalData.money += synergy.money;
-                                    GlobalData.population += synergy.population;
-                                    GlobalData.faith += synergy.faith;
+                                    if (synergy.buildingType == building.type)
+                                    {
+                                        GlobalData.money += synergy.money;
+                                        GlobalData.population += synergy.population;
+                                        GlobalData.faith += synergy.faith;
 
-                                    if (synergy.money > 0)
-                                    {
-                                        VfxPlayer.Instance.PlayVfx(0, building.transform.position, synergy.money);
-                                    }
-                                    if (synergy.population > 0)
-                                    {
-                                        VfxPlayer.Instance.PlayVfx(1, building.transform.position, synergy.population);
-                                    }
-                                    if (synergy.faith > 0)
-                                    {
-                                        VfxPlayer.Instance.PlayVfx(2, building.transform.position, synergy.faith);
+                                        if (synergy.money > 0)
+                                        {
+                                            VfxPlayer.Instance.PlayVfx(0, building.transform.position, synergy.money);
+                                        }
+                                        if (synergy.population > 0)
+                                        {
+                                            VfxPlayer.Instance.PlayVfx(1, building.transform.position, synergy.population);
+                                        }
+                                        if (synergy.faith > 0)
+                                        {
+                                            VfxPlayer.Instance.PlayVfx(2, building.transform.position, synergy.faith);
+                                        }
                                     }
                                 }
                             }
@@ -145,6 +148,7 @@ namespace Building
                 {
                     renderer.material = Resources.Load<Material>("AtlasWet");
                 }
+                transform.SendMessage("Splash", SendMessageOptions.DontRequireReceiver);
                 firstCollision = true;
                 enabled = false;
             }

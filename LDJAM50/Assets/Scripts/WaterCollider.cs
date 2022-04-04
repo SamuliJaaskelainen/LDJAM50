@@ -12,9 +12,10 @@ public class WaterCollider : MonoBehaviour
         audioSource = gameObject.AddComponent<AudioSource>();
     }
 
-    void OnTriggerEnter(Collider other)
+    public void Splash()
     {
         audioSource.clip = clips[Random.Range(0, clips.Length)];
         audioSource.Play();
+        VfxPlayer.Instance.PlayVfx(3, transform.position);
     }
 }

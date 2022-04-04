@@ -22,7 +22,5 @@ public class SFXCollider : MonoBehaviour
             audioSource.clip = clips[Random.Range(0, clips.Length)];
             audioSource.Play();
         }
-		Debug.Log("Timer: " + timer);
-		Debug.Log("Time: " + Time.time);
     }
 }
