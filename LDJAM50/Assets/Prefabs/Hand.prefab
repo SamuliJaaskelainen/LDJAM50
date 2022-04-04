@@ -197,7 +197,7 @@ MonoBehaviour:
     - prefabToSpawn: {fileID: 8663934055517150627, guid: 10866775e6d9cdd4cbf0e462e88ac408,
         type: 3}
       number: 0
-    price: 200
+    price: 400
     setName: Power fantasies
     setDescription: Leadership and broad shoulders to build on.
   - cards:
@@ -210,7 +210,7 @@ MonoBehaviour:
     - prefabToSpawn: {fileID: 4618421803460695830, guid: f75738e42e52c4b4d83ce7532b9fda04,
         type: 3}
       number: 0
-    price: 50
+    price: 100
     setName: Pretty Rural
     setDescription: When some peace and quite is needed.
   - cards:
@@ -220,7 +220,7 @@ MonoBehaviour:
     - prefabToSpawn: {fileID: 8781552269768396170, guid: d4923376d2e2dfb4a9c1fc297e3fa8ac,
         type: 3}
       number: 0
-    price: 15
+    price: 50
     setName: Green and house
     setDescription: Might also work with submarine agriculture efforts..?
   - cards:
@@ -239,7 +239,7 @@ MonoBehaviour:
     - prefabToSpawn: {fileID: 4618421803460695830, guid: f75738e42e52c4b4d83ce7532b9fda04,
         type: 3}
       number: 0
-    price: 10
+    price: 100
     setName: Time to park
     setDescription: Greenery and harmony brings the best out of people
   - cards:
@@ -255,7 +255,7 @@ MonoBehaviour:
     - prefabToSpawn: {fileID: 8663934055517150627, guid: 10866775e6d9cdd4cbf0e462e88ac408,
         type: 3}
       number: 0
-    price: 150
+    price: 300
     setName: Miraculous
     setDescription: Well, worth the try at least?
   - cards:
@@ -274,7 +274,7 @@ MonoBehaviour:
     - prefabToSpawn: {fileID: 5020840687663118144, guid: 657d13df32bf53f49a7917e866622fe1,
         type: 3}
       number: 0
-    price: 150
+    price: 500
     setName: Holy flock
     setDescription: Religious leader and their flock
   - cards:
@@ -290,7 +290,7 @@ MonoBehaviour:
     - prefabToSpawn: {fileID: 7322123193864878799, guid: 4fee15fb1afa09f4c89e631468911357,
         type: 3}
       number: 0
-    price: 25
+    price: 100
     setName: For the people
     setDescription: The populace demands housing
   - cards:
@@ -306,7 +306,7 @@ MonoBehaviour:
     - prefabToSpawn: {fileID: 8781552269768396170, guid: d4923376d2e2dfb4a9c1fc297e3fa8ac,
         type: 3}
       number: 0
-    price: 30
+    price: 150
     setName: Population density
     setDescription: Have the right people in the right places.
   - cards:
@@ -319,25 +319,25 @@ MonoBehaviour:
     - prefabToSpawn: {fileID: 647628065627256395, guid: 0907d012a1a70ad43a019bcd7bd8b4f5,
         type: 3}
       number: 0
-    price: 15
+    price: 75
     setName: Local Food
     setDescription: Something for everyone
   - cards:
-    - prefabToSpawn: {fileID: 5020840687663118144, guid: 657d13df32bf53f49a7917e866622fe1,
+    - prefabToSpawn: {fileID: 9100706080293014004, guid: fb88b85e74835864485ec5cc59312a0f,
         type: 3}
       number: 0
-    - prefabToSpawn: {fileID: 5020840687663118144, guid: 657d13df32bf53f49a7917e866622fe1,
+    - prefabToSpawn: {fileID: 9100706080293014004, guid: fb88b85e74835864485ec5cc59312a0f,
         type: 3}
       number: 0
-    - prefabToSpawn: {fileID: 7413758458260466775, guid: 49e759e89f4f9be45b233589bef182ce,
+    - prefabToSpawn: {fileID: 9100706080293014004, guid: fb88b85e74835864485ec5cc59312a0f,
         type: 3}
       number: 0
-    - prefabToSpawn: {fileID: 8140269668574568819, guid: ddcfb7552a803d146b3a5e872cc5d43e,
+    - prefabToSpawn: {fileID: 7322123193864878799, guid: 4fee15fb1afa09f4c89e631468911357,
         type: 3}
       number: 0
-    price: 80
-    setName: Middle management
-    setDescription: Someone needs to take this message to the next guy
+    price: 999
+    setName: Massikeisarin unelma
+    setDescription: Pricy trees for you
   - cards:
     - prefabToSpawn: {fileID: 485709065878808632, guid: 299447bf04bd05a4aba4e4bb4e527788,
         type: 3}
@@ -351,7 +351,7 @@ MonoBehaviour:
     - prefabToSpawn: {fileID: 7413758458260466775, guid: 49e759e89f4f9be45b233589bef182ce,
         type: 3}
       number: 0
-    price: 15
+    price: 50
     setName: Guide the way
     setDescription: This will show you the path
   - cards:
@@ -370,7 +370,7 @@ MonoBehaviour:
     - prefabToSpawn: {fileID: 647628065627256395, guid: 0907d012a1a70ad43a019bcd7bd8b4f5,
         type: 3}
       number: 0
-    price: 50
+    price: 150
     setName: Conquest of Bread
     setDescription: Let it grain
   handCam: {fileID: 2539684930756161952}
