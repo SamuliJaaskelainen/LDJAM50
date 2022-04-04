@@ -6043,7 +6043,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Receive money
+  m_text: Receive money, skip building
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6da8b084065b84b11bfce11a66f47113, type: 2}
   m_sharedMaterial: {fileID: 6767362759339702426, guid: 6da8b084065b84b11bfce11a66f47113,
