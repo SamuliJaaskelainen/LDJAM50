@@ -128,19 +128,89 @@ public class Hand : MonoBehaviour
         switch (cardname)
         {
             case "Mansion":
-                AudioManager.Instance.PlaySound("Select_LargeHouse");
+				switch (Random.Range(0, 4))
+                {
+                    case 0:
+                        AudioManager.Instance.PlaySound("Select_LargeHouse1");
+                        break;
+                    case 1:
+                        AudioManager.Instance.PlaySound("Select_LargeHouse2");
+                        break;
+                    case 2:
+                        AudioManager.Instance.PlaySound("Select_LargeHouse3");
+                        break;
+                    case 3:
+                        AudioManager.Instance.PlaySound("Select_LargeHouse4");
+                        break;
+                }
                 break;
             case "TallHouse":
-                AudioManager.Instance.PlaySound("Select_MediumHouse");
+				switch (Random.Range(0, 4))
+                {
+                    case 0:
+                        AudioManager.Instance.PlaySound("Select_MediumHouse1");
+                        break;
+                    case 1:
+                        AudioManager.Instance.PlaySound("Select_MediumHouse2");
+                        break;
+                    case 2:
+                        AudioManager.Instance.PlaySound("Select_MediumHouse3");
+                        break;
+                    case 3:
+                        AudioManager.Instance.PlaySound("Select_MediumHouse4");
+                        break;
+                }
                 break;
             case "LargeHouse":
-                AudioManager.Instance.PlaySound("Select_MediumHouse");
+				switch (Random.Range(0, 4))
+                {
+                    case 0:
+                        AudioManager.Instance.PlaySound("Select_MediumHouse1");
+                        break;
+                    case 1:
+                        AudioManager.Instance.PlaySound("Select_MediumHouse2");
+                        break;
+                    case 2:
+                        AudioManager.Instance.PlaySound("Select_MediumHouse3");
+                        break;
+                    case 3:
+                        AudioManager.Instance.PlaySound("Select_MediumHouse4");
+                        break;
+                }
                 break;
             case "SmallHouse":
-                AudioManager.Instance.PlaySound("Select_SmallHouse");
+				switch (Random.Range(0, 4))
+                {
+                    case 0:
+                        AudioManager.Instance.PlaySound("Select_SmallHouse1");
+                        break;
+                    case 1:
+                        AudioManager.Instance.PlaySound("Select_SmallHouse2");
+                        break;
+                    case 2:
+                        AudioManager.Instance.PlaySound("Select_SmallHouse3");
+                        break;
+                    case 3:
+                        AudioManager.Instance.PlaySound("Select_SmallHouse4");
+                        break;
+                }
                 break;
             case "Apartment":
-                AudioManager.Instance.PlaySound("Select_LargeHouse");
+				switch (Random.Range(0, 4))
+                {
+                    case 0:
+                        AudioManager.Instance.PlaySound("Select_LargeHouse1");
+                        break;
+                    case 1:
+                        AudioManager.Instance.PlaySound("Select_LargeHouse2");
+                        break;
+                    case 2:
+                        AudioManager.Instance.PlaySound("Select_LargeHouse3");
+                        break;
+                    case 3:
+                        AudioManager.Instance.PlaySound("Select_LargeHouse4");
+                        break;
+                }
                 break;
             case "Brewery":
                 AudioManager.Instance.PlaySound("Select_Brewery");
@@ -150,15 +220,75 @@ public class Hand : MonoBehaviour
                 break;
 
             case "Park":
-                AudioManager.Instance.PlaySound("Select_Park");
+				switch (Random.Range(0, 4))
+                {
+                    case 0:
+                        AudioManager.Instance.PlaySound("Select_Park1");
+                        break;
+                    case 1:
+                        AudioManager.Instance.PlaySound("Select_Park2");
+                        break;
+                    case 2:
+                        AudioManager.Instance.PlaySound("Select_Park3");
+                        break;
+                    case 3:
+                        AudioManager.Instance.PlaySound("Select_Park4");
+                        break;
+                }
+                break;
+
+            case "Greenhouse":
+				switch (Random.Range(0, 4))
+                {
+                    case 0:
+                        AudioManager.Instance.PlaySound("Select_GreenHouse1");
+                        break;
+                    case 1:
+                        AudioManager.Instance.PlaySound("Select_GreenHouse2");
+                        break;
+                    case 2:
+                        AudioManager.Instance.PlaySound("Select_GreenHouse3");
+                        break;
+                    case 3:
+                        AudioManager.Instance.PlaySound("Select_GreenHouse4");
+                        break;
+                }
                 break;
 
             case "Wall":
-                AudioManager.Instance.PlaySound("Select_SmallStone");
+				switch (Random.Range(0, 4))
+                {
+                    case 0:
+                        AudioManager.Instance.PlaySound("Select_SmallStone1");
+                        break;
+                    case 1:
+                        AudioManager.Instance.PlaySound("Select_SmallStone2");
+                        break;
+                    case 2:
+                        AudioManager.Instance.PlaySound("Select_SmallStone3");
+                        break;
+                    case 3:
+                        AudioManager.Instance.PlaySound("Select_SmallStone4");
+                        break;
+                }
                 break;
 
             case "Lighthouse":
-                AudioManager.Instance.PlaySound("Select_MediumStone");
+				switch (Random.Range(0, 4))
+                {
+                    case 0:
+                        AudioManager.Instance.PlaySound("Select_MediumStone1");
+                        break;
+                    case 1:
+                        AudioManager.Instance.PlaySound("Select_MediumStone2");
+                        break;
+                    case 2:
+                        AudioManager.Instance.PlaySound("Select_MediumStone3");
+                        break;
+                    case 3:
+                        AudioManager.Instance.PlaySound("Select_MediumStone4");
+                        break;
+                }
                 break;
 
             case "Keep":

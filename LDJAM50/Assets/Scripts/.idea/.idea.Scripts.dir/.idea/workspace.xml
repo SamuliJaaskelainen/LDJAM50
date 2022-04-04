@@ -2,9 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="af7671ff-8049-4dc7-80ba-55c257d6e71a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../Audio/sfx/cards/Select_LargeHouse.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Audio/sfx/cards/Select_LargeHouse.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Audio/sfx/cards/Select_LargeStone.wav" beforeDir="false" afterPath="$PROJECT_DIR$/../Audio/sfx/cards/Select_LargeStone.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Audio/sfx/cards/Select_LargeStone.wav.meta" beforeDir="false" afterPath="$PROJECT_DIR$/../Audio/sfx/cards/Select_LargeStone.wav.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Audio/sfx/cards/Select_MediumHouse.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Audio/sfx/cards/Select_MediumHouse.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Audio/sfx/cards/Select_MediumStone.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Audio/sfx/cards/Select_MediumStone.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Audio/sfx/cards/Select_Park.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Audio/sfx/cards/Select_Park.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Audio/sfx/cards/Select_SmallHouse.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Audio/sfx/cards/Select_SmallHouse.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Audio/sfx/cards/Select_SmallStone.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Audio/sfx/cards/Select_SmallStone.wav.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Prefabs/AudioManager.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/../Prefabs/AudioManager.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/../Scenes/Main.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Scripts.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Scripts.dir/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Hand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Hand.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Shaders/Terrain/FancyTerrain.mat" beforeDir="false" afterPath="$PROJECT_DIR$/../Shaders/Terrain/FancyTerrain.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Shaders/Water/Water.mat" beforeDir="false" afterPath="$PROJECT_DIR$/../Shaders/Water/Water.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SeaLevelListener.cs" beforeDir="false" afterPath="$PROJECT_DIR$/SeaLevelListener.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +80,7 @@
       <workItem from="1648986717827" duration="393000" />
       <workItem from="1648999527661" duration="2000" />
       <workItem from="1648999773088" duration="10542000" />
-      <workItem from="1649012299055" duration="307000" />
+      <workItem from="1649012299055" duration="5641000" />
     </task>
     <servers />
   </component>
