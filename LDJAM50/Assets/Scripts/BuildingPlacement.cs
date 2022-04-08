@@ -85,6 +85,7 @@ namespace Building
                 GlobalData.population += basePopulation;
                 GlobalData.faith += baseFaith;
                 peopleSpawned = true;
+                Destroy(transform.Find("GameObject").gameObject);
 
                 if (baseMoney > 0)
                 {
