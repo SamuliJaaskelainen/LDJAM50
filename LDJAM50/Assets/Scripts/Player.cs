@@ -95,5 +95,7 @@ public class Player : MonoBehaviour
         cursor.gameObject.SetActive(Hand.Instance.IsCardSelected());
         wasCardSelected = Hand.Instance.IsCardSelected();
         GetComponent<AudioSource>().volume = zoomLevel;
+		camParent.position = new Vector3(Mathf.Clamp(camParent.position.x, -100f, 100f), camParent.position.y, Mathf.Clamp(camParent.position.z, -100.0f, 100.0f));
+
     }
 }
